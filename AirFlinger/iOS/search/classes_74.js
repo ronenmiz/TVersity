@@ -13,8 +13,11 @@ var searchData=
   ['tversityafobject',['TVersityAFObject',['../interface_t_versity_a_f_object.html',1,'']]],
   ['tversityafplayer',['TVersityAFPlayer',['../interface_t_versity_a_f_player.html',1,'']]],
   ['tversityafresource',['TVersityAFResource',['../interface_t_versity_a_f_resource.html',1,'']]],
+  ['tversityafscreenshotprovider',['TVersityAFScreenshotProvider',['../interface_t_versity_a_f_screenshot_provider.html',1,'']]],
   ['tversityafserver',['TVersityAFServer',['../interface_t_versity_a_f_server.html',1,'']]],
   ['tversityafuiwebviewextender',['TVersityAFUIWebViewExtender',['../interface_t_versity_a_f_u_i_web_view_extender.html',1,'']]],
   ['tversityafuiwebviewmediadelegate_2dp',['TVersityAFUIWebViewMediaDelegate-p',['../protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html',1,'']]],
-  ['tversityafvideo',['TVersityAFVideo',['../interface_t_versity_a_f_video.html',1,'']]]
+  ['tversityafvideo',['TVersityAFVideo',['../interface_t_versity_a_f_video.html',1,'']]],
+  ['tversityinternaluserdata',['TVersityInternalUserData',['../interface_t_versity_internal_user_data.html',1,'']]],
+  ['tversityuiimage',['TVersityUIImage',['../interface_t_versity_u_i_image.html',1,'']]]
 ];

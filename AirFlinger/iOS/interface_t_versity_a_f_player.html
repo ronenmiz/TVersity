@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>TVersity AirFlinger iOS SDK: TVersityAFPlayer Class Reference</title>
+<title>AirFlinger iOS SDK: TVersityAFPlayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">TVersity AirFlinger iOS SDK
+   <div id="projectname">AirFlinger iOS SDK
    </div>
-   <div id="projectbrief">TVersity is a software solution for operators and service providers that brings the best of Google TV and Apple TV to set-top boxes, connected TVs and other devices.</div>
   </td>
  </tr>
  </tbody>
@@ -38,9 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -61,10 +58,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -72,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,103 +82,87 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Instance Methods</a> &#124;
-<a href="#properties">Properties</a> &#124;
-<a href="class_t_versity_a_f_player-members.html">List of all members</a>  </div>
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFPlayer Class Reference<div class="ingroups"><a class="el" href="group___players.html">Players related types</a> &#124; <a class="el" href="group___devices.html">Device related types</a></div></div>  </div>
+<div class="title">TVersityAFPlayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The Player device provides the functionality for playing media and getting information about the playing media, as well as general information about the device. You can get the current players by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a>  
- <a href="interface_t_versity_a_f_player.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for TVersityAFPlayer:</div>
-<div class="dyncontent">
+<p><code>#import &lt;<a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for TVersityAFPlayer:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
  <div class="center">
   <img src="interface_t_versity_a_f_player.png" usemap="#TVersityAFPlayer_map" alt=""/>
   <map id="TVersityAFPlayer_map" name="TVersityAFPlayer_map">
-<area href="interface_t_versity_a_f_device.html" title="An abstract class that provides common information about a device. You can get the current devices by..." alt="TVersityAFDevice" shape="rect" coords="0,56,116,80"/>
+<area href="interface_t_versity_a_f_device.html" alt="TVersityAFDevice" shape="rect" coords="0,56,116,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:aa15631d1d45ed97196edb65c8d59c258"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#aa15631d1d45ed97196edb65c8d59c258">getPositionInfo:error:</a></td></tr>
-<tr class="memdesc:aa15631d1d45ed97196edb65c8d59c258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the current position of the media loaded in the player. This method returns immediately and the block is called asynchronously with the required information.  <a href="#aa15631d1d45ed97196edb65c8d59c258"></a><br/></td></tr>
 <tr class="separator:aa15631d1d45ed97196edb65c8d59c258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025f026836a3bb73834acc0448a6de72"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a025f026836a3bb73834acc0448a6de72">getVolume:error:</a></td></tr>
-<tr class="memdesc:a025f026836a3bb73834acc0448a6de72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the player for its current playing volume.  <a href="#a025f026836a3bb73834acc0448a6de72"></a><br/></td></tr>
-<tr class="separator:a025f026836a3bb73834acc0448a6de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b21fa80ad62f8f464adb30ea64e1047"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a2b21fa80ad62f8f464adb30ea64e1047">pause:error:</a></td></tr>
-<tr class="memdesc:a2b21fa80ad62f8f464adb30ea64e1047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a Pause command to the player.  <a href="#a2b21fa80ad62f8f464adb30ea64e1047"></a><br/></td></tr>
 <tr class="separator:a2b21fa80ad62f8f464adb30ea64e1047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdce51f5a5e73dab5ee2145ef7c07f81"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#acdce51f5a5e73dab5ee2145ef7c07f81">playAFMediaItem:title:mimeType:block:posBlock:error:</a></td></tr>
-<tr class="memdesc:acdce51f5a5e73dab5ee2145ef7c07f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> to play.  <a href="#acdce51f5a5e73dab5ee2145ef7c07f81"></a><br/></td></tr>
-<tr class="separator:acdce51f5a5e73dab5ee2145ef7c07f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af311526e045aad549b00db13a7fadad5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#af311526e045aad549b00db13a7fadad5">playALAsset:title:mimeType:block:posBlock:error:</a></td></tr>
-<tr class="memdesc:af311526e045aad549b00db13a7fadad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an ALAsset to play.  <a href="#af311526e045aad549b00db13a7fadad5"></a><br/></td></tr>
-<tr class="separator:af311526e045aad549b00db13a7fadad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e39d19e5eefaf2f7fe0443f9d59db2"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a91e39d19e5eefaf2f7fe0443f9d59db2">playAVAsset:title:mimeType:block:posBlock:error:</a></td></tr>
-<tr class="memdesc:a91e39d19e5eefaf2f7fe0443f9d59db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an AVAsset to play.  <a href="#a91e39d19e5eefaf2f7fe0443f9d59db2"></a><br/></td></tr>
-<tr class="separator:a91e39d19e5eefaf2f7fe0443f9d59db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a704f80990c15341e59b184b211cb5305"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a704f80990c15341e59b184b211cb5305">playMPMediaItem:title:mimeType:block:posBlock:error:</a></td></tr>
-<tr class="memdesc:a704f80990c15341e59b184b211cb5305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an MPMediaItem to play.  <a href="#a704f80990c15341e59b184b211cb5305"></a><br/></td></tr>
-<tr class="separator:a704f80990c15341e59b184b211cb5305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73a0d32767f96e097f79e40c01f1be5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#aa73a0d32767f96e097f79e40c01f1be5">playScreen:error:</a></td></tr>
-<tr class="memdesc:aa73a0d32767f96e097f79e40c01f1be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the player to start playing the current application screen.  <a href="#aa73a0d32767f96e097f79e40c01f1be5"></a><br/></td></tr>
-<tr class="separator:aa73a0d32767f96e097f79e40c01f1be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa880d811ce4a51fd576b4a5ae30f3fb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#aaa880d811ce4a51fd576b4a5ae30f3fb">playURI:title:mimeType:block:posBlock:error:</a></td></tr>
-<tr class="memdesc:aaa880d811ce4a51fd576b4a5ae30f3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a URI to play.  <a href="#aaa880d811ce4a51fd576b4a5ae30f3fb"></a><br/></td></tr>
 <tr class="separator:aaa880d811ce4a51fd576b4a5ae30f3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704f80990c15341e59b184b211cb5305"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a704f80990c15341e59b184b211cb5305">playMPMediaItem:title:mimeType:block:posBlock:error:</a></td></tr>
+<tr class="separator:a704f80990c15341e59b184b211cb5305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e39d19e5eefaf2f7fe0443f9d59db2"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a91e39d19e5eefaf2f7fe0443f9d59db2">playAVAsset:title:mimeType:block:posBlock:error:</a></td></tr>
+<tr class="separator:a91e39d19e5eefaf2f7fe0443f9d59db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af311526e045aad549b00db13a7fadad5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#af311526e045aad549b00db13a7fadad5">playALAsset:title:mimeType:block:posBlock:error:</a></td></tr>
+<tr class="separator:af311526e045aad549b00db13a7fadad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdce51f5a5e73dab5ee2145ef7c07f81"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#acdce51f5a5e73dab5ee2145ef7c07f81">playAFMediaItem:title:mimeType:block:posBlock:error:</a></td></tr>
+<tr class="separator:acdce51f5a5e73dab5ee2145ef7c07f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73a0d32767f96e097f79e40c01f1be5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#aa73a0d32767f96e097f79e40c01f1be5">playScreen:error:</a></td></tr>
+<tr class="separator:aa73a0d32767f96e097f79e40c01f1be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253a7fffb4e463fe4584327fa78d3a2b"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a253a7fffb4e463fe4584327fa78d3a2b">resume:error:</a></td></tr>
-<tr class="memdesc:a253a7fffb4e463fe4584327fa78d3a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a Resume command to the player.  <a href="#a253a7fffb4e463fe4584327fa78d3a2b"></a><br/></td></tr>
 <tr class="separator:a253a7fffb4e463fe4584327fa78d3a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf28e115a8e00ff74e94267bf41d607a"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#acf28e115a8e00ff74e94267bf41d607a">seekBySeconds:block:error:</a></td></tr>
-<tr class="memdesc:acf28e115a8e00ff74e94267bf41d607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a Seek command to the player.  <a href="#acf28e115a8e00ff74e94267bf41d607a"></a><br/></td></tr>
-<tr class="separator:acf28e115a8e00ff74e94267bf41d607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42e2a192496a48d1278aeab60a60012e"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a42e2a192496a48d1278aeab60a60012e">seekByTimeString:block:error:</a></td></tr>
-<tr class="memdesc:a42e2a192496a48d1278aeab60a60012e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a Seek command to the player.  <a href="#a42e2a192496a48d1278aeab60a60012e"></a><br/></td></tr>
 <tr class="separator:a42e2a192496a48d1278aeab60a60012e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699f4a004e59dabb9eafcda901b1701f"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a699f4a004e59dabb9eafcda901b1701f">setVolume:block:error:</a></td></tr>
-<tr class="memdesc:a699f4a004e59dabb9eafcda901b1701f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playing volume of the player.  <a href="#a699f4a004e59dabb9eafcda901b1701f"></a><br/></td></tr>
-<tr class="separator:a699f4a004e59dabb9eafcda901b1701f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf28e115a8e00ff74e94267bf41d607a"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#acf28e115a8e00ff74e94267bf41d607a">seekBySeconds:block:error:</a></td></tr>
+<tr class="separator:acf28e115a8e00ff74e94267bf41d607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae176a63cb1fae53bfc18c9f37f4849a5"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#ae176a63cb1fae53bfc18c9f37f4849a5">stop:error:</a></td></tr>
-<tr class="memdesc:ae176a63cb1fae53bfc18c9f37f4849a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a Stop command to the player.  <a href="#ae176a63cb1fae53bfc18c9f37f4849a5"></a><br/></td></tr>
 <tr class="separator:ae176a63cb1fae53bfc18c9f37f4849a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025f026836a3bb73834acc0448a6de72"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a025f026836a3bb73834acc0448a6de72">getVolume:error:</a></td></tr>
+<tr class="separator:a025f026836a3bb73834acc0448a6de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699f4a004e59dabb9eafcda901b1701f"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a699f4a004e59dabb9eafcda901b1701f">setVolume:block:error:</a></td></tr>
+<tr class="separator:a699f4a004e59dabb9eafcda901b1701f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fd586bf24d92b1cbdc88538eb8a36c"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a78fd586bf24d92b1cbdc88538eb8a36c">initWithId:andName:andSupportedMimeTypes:andDeviceCapabilities:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a78fd586bf24d92b1cbdc88538eb8a36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee50e0fcda3d55fb5df42682c29c6837"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_device.html#aee50e0fcda3d55fb5df42682c29c6837">initWithId:andName:</a><code> [implementation]</code></td></tr>
+<tr class="separator:aee50e0fcda3d55fb5df42682c29c6837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d485ce2ec060be451adc5d52277b3b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_device.html#ac3d485ce2ec060be451adc5d52277b3b">setCurrentStatus:</a><code> [implementation]</code></td></tr>
+<tr class="separator:ac3d485ce2ec060be451adc5d52277b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ad351d6abfed24bad9e05ad1b1dbd3f19"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#ad351d6abfed24bad9e05ad1b1dbd3f19">currentDuration</a></td></tr>
-<tr class="memdesc:ad351d6abfed24bad9e05ad1b1dbd3f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of the current media of the player. nil if no media is loaded.  <a href="#ad351d6abfed24bad9e05ad1b1dbd3f19"></a><br/></td></tr>
 <tr class="separator:ad351d6abfed24bad9e05ad1b1dbd3f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___devices.html#ga9605f94167ee44f963a79c4300e0ae4e">TVersityAFDeviceStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0cf0bab4a61fad8ef6c8fa13c2b6d807">currentStatus</a></td></tr>
-<tr class="memdesc:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device current status.  <a href="#a0cf0bab4a61fad8ef6c8fa13c2b6d807"></a><br/></td></tr>
-<tr class="separator:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0ef473d1a3e2f44aa32d805544acc2b9">currentStatusName</a></td></tr>
-<tr class="memdesc:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A desciptive name to current status of the device.  <a href="#a0ef473d1a3e2f44aa32d805544acc2b9"></a><br/></td></tr>
-<tr class="separator:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4886859fd471efc3916871714e55a8"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#a5b4886859fd471efc3916871714e55a8">currentTitle</a></td></tr>
-<tr class="memdesc:a5b4886859fd471efc3916871714e55a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The title of the current media of the player. nil if no media is loaded.  <a href="#a5b4886859fd471efc3916871714e55a8"></a><br/></td></tr>
 <tr class="separator:a5b4886859fd471efc3916871714e55a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7673ba7b01201b7191c6fab3099985ac"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#a7673ba7b01201b7191c6fab3099985ac">currentUri</a></td></tr>
-<tr class="memdesc:a7673ba7b01201b7191c6fab3099985ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URI currently loaded in the playe. nil if no media is loaded.  <a href="#a7673ba7b01201b7191c6fab3099985ac"></a><br/></td></tr>
 <tr class="separator:a7673ba7b01201b7191c6fab3099985ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f895139106a29ac251df970ab9597a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#a3f895139106a29ac251df970ab9597a0">deviceCapabilities</a></td></tr>
-<tr class="memdesc:a3f895139106a29ac251df970ab9597a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise combination of TVersityAFPlayerCapabilites values. Indicates whether the player supports certain features or not.  <a href="#a3f895139106a29ac251df970ab9597a0"></a><br/></td></tr>
 <tr class="separator:a3f895139106a29ac251df970ab9597a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93523410422300df02a298dd626d4410"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#a93523410422300df02a298dd626d4410">supportedMimeTypes</a></td></tr>
+<tr class="separator:a93523410422300df02a298dd626d4410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memItemLeft" align="right" valign="top">TVersityAFDeviceStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0cf0bab4a61fad8ef6c8fa13c2b6d807">currentStatus</a></td></tr>
+<tr class="separator:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0ef473d1a3e2f44aa32d805544acc2b9">currentStatusName</a></td></tr>
+<tr class="separator:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398e68bc601fe023ad49dec36f5e371e"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a398e68bc601fe023ad49dec36f5e371e">deviceId</a></td></tr>
-<tr class="memdesc:a398e68bc601fe023ad49dec36f5e371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device Id.  <a href="#a398e68bc601fe023ad49dec36f5e371e"></a><br/></td></tr>
 <tr class="separator:a398e68bc601fe023ad49dec36f5e371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2b3dd994a38dd40ece707f21bf4556"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a5f2b3dd994a38dd40ece707f21bf4556">name</a></td></tr>
-<tr class="memdesc:a5f2b3dd994a38dd40ece707f21bf4556"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device name.  <a href="#a5f2b3dd994a38dd40ece707f21bf4556"></a><br/></td></tr>
 <tr class="separator:a5f2b3dd994a38dd40ece707f21bf4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93523410422300df02a298dd626d4410"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html#a93523410422300df02a298dd626d4410">supportedMimeTypes</a></td></tr>
-<tr class="memdesc:a93523410422300df02a298dd626d4410"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mime types supported by the player. A comma separated list of supported mime types.  <a href="#a93523410422300df02a298dd626d4410"></a><br/></td></tr>
-<tr class="separator:a93523410422300df02a298dd626d4410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Player device provides the functionality for playing media and getting information about the playing media, as well as general information about the device. You can get the current players by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a> </p>
-<p>Unless oherwise noted, a member function that accept a block as a paremeter, returns immediately and the block will be invoked asynchronously with the results. Invocations of result blocks always occur in the main thread. </p>
+<div class="textblock"><p>The player device provides the functionality for playing media and getting information about this media, as well as information about the device. </p>
+
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00062">62</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="aa15631d1d45ed97196edb65c8d59c258"></a>
 <div class="memitem">
@@ -190,7 +171,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) getPositionInfo: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -206,8 +187,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get information about the current position of the media loaded in the player. This method returns immediately and the block is called asynchronously with the required information. </p>
+<p>Get information on the current position in the media loaded in the player. This method returns the data asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the position information. The block is called in the main thread of the application. </td></tr>
@@ -226,7 +206,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) getVolume: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga365952714d7bd70e46ca9d15e80f9270">TVersityAFVolumeBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFVolumeBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -242,9 +222,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Queries the player for its current playing volume. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Queries the player for its current playing volume. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
@@ -252,14 +230,88 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee50e0fcda3d55fb5df42682c29c6837"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithId: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>id</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78fd586bf24d92b1cbdc88538eb8a36c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithId: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>deviceId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>name</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andSupportedMimeTypes:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>mimeTypes</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andDeviceCapabilities:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>capabilities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -270,7 +322,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) pause: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -286,9 +338,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a Pause command to the player. </p>
-<p>This method returns immediately and the block is called asynchronously with the results.</p>
+<p>Send pause command to the player. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
@@ -296,13 +346,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -332,13 +376,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
           <td class="paramkey">posBlock:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>posBlock</em></td>
         </tr>
         <tr>
@@ -354,28 +398,19 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> to play. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send an <a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> to play. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">asset</td><td>The <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> asset to play </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>The title of the media to play. Can be nil. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mimeType</td><td>Mime type of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">asset</td><td>The <a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> asset to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>title The title of the media to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>mimeType Mime type of the media to play. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">posBlock</td><td>A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>posBlock A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error accured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The asset uri parameter is not valid, only HTTP urls are acceptable</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The uri parameter is not valid, only HTTP urls are acceptable TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -405,13 +440,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
           <td class="paramkey">posBlock:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>posBlock</em></td>
         </tr>
         <tr>
@@ -427,28 +462,19 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Send an ALAsset to play. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send an ALAsset to play. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">alAsset</td><td>The AL (Assets Library) asset to play </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>The title of the media to play. Can be nil. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mimeType</td><td>Mime type of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>title The title of the media to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>mimeType Mime type of the media to play. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">posBlock</td><td>A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>posBlock A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error accured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The alAsset uri parameter is not valid, only HTTP urls are acceptable</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The uri parameter is not valid, only HTTP urls are acceptable TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -478,13 +504,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
           <td class="paramkey">posBlock:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>posBlock</em></td>
         </tr>
         <tr>
@@ -500,28 +526,19 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Send an AVAsset to play. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send an AVAsset to play. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">avAsset</td><td>The AV asset to play </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>The title of the media to play. Can be nil. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mimeType</td><td>Mime type of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>title The title of the media to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>mimeType Mime type of the media to play. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">posBlock</td><td>A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>posBlock A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error accured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The avAsset uri is not valid, only HTTP urls are acceptable</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The uri parameter is not valid, only HTTP urls are acceptable TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -551,13 +568,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
           <td class="paramkey">posBlock:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>posBlock</em></td>
         </tr>
         <tr>
@@ -573,28 +590,19 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends an MPMediaItem to play. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send a MPMediaItem to play. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mediaItem</td><td>The MP media item to play </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>The title of the media to play. Can be nil. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mimeType</td><td>Mime type of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>title The title of the media to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>mimeType Mime type of the media to play. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">posBlock</td><td>A block to be called asynchronously during playback with position information. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>posBlock A block to be called asynchronously during playback with position information. Can be nil. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error accured, outError will contain an error object with error information. The block is called in the main thread of the application.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The mediaItem uri is not valid, only HTTP urls are acceptable</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The uri parameter is not valid, only HTTP urls are acceptable TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -606,7 +614,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) playScreen: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -622,9 +630,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Instructs the player to start playing the current application screen. </p>
-<p>This means the player will display a mirror of the application screen. As opposed to the other play commands, this method does not require any resource parameter, because the screen capturing is handled internally by the SDK. </p>
+<p>Instruct the player to start playing the current application screen. This means the player will display a mirror of the application screen. In oppose to the other play commands, this method does not require any resource parameter, since the screen capturing is handles internally by the SDK. </p>
 
 </div>
 </div>
@@ -653,13 +659,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
           <td class="paramkey">posBlock:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFPositionInfoBlock)&#160;</td>
           <td class="paramname"><em>posBlock</em></td>
         </tr>
         <tr>
@@ -675,29 +681,22 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a URI to play. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send a uri to play. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>The uri to play. Use <a class="el" href="interface_t_versity_a_f_air_flinger.html#a5825cfa4e84e442d8702288e6e75c4f0">getURLFromAsset: (TVersityAFAirFlinger)</a> to obtain the URI. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">title</td><td>The title of the media to play. Can be nil. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mimeType</td><td>Mime type of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>The uri to play </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>title The title of the media to play. Can be nil. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>mimeType Mime type of the media to play. Can be nil. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">posBlock</td><td>A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">(optional)</td><td>posBlock A block to be called asynchronously during playback with position information. Can be nil. The block is called in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error accured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The uri parameter is not valid, only HTTP urls are acceptable</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
-<dl class="section remark"><dt>Remarks</dt><dd>The mimeType parameter is optional. If nil is used, the player will try to derive the mime type from the URI's extension.</dd></dl>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The uri parameter is not valid, only HTTP urls are acceptable TVersityAFUnknownError</p>
+<dl class="section remark"><dt>Remarks</dt><dd>The mimeType parameter is optional. If nil is used, the player will try to derive the mime type from the URI's extension. </dd>
+<dd>
+Supported protocols for media URI are http and ios. ios protocol is internal to this SDK. It supports passing of urls extracted from iOS resources. For example a url can be extracted from an MPMediaItem calling the method valueForProperty with key MPMediaItemPropertyAssetURL. Another example is extracting the urls from the dictionary returned by calling the ALAsset method valueForProperty with key ALAssetPropertyURLs. An ios protocol uri looks like this "ios://&lt;ios asset url&gt;". For example an actual uri can look like that: "ios://ipod-library://item/item.mp3?id=2495898145950574024". You should always get the asset url using iOS APIs as explained above, rather than trying to compose it yourself. This will protect you from internal iOS API changes in the assets url format.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -709,7 +708,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) resume: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -725,9 +724,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a Resume command to the player. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send resume command to the player. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
@@ -735,13 +732,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -759,7 +750,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -775,10 +766,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a Seek command to the player. </p>
-<p>This method will move the media to the location passed in seekTime parameter.</p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send seek command to the player. This method will move the media to the location passed in seekTime parameter. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">seekSeconds</td><td>The time point to seek in seconds </td></tr>
@@ -787,14 +775,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The seekTime parameter is not valid</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The seekTime parameter is not valid TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -812,7 +793,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -828,10 +809,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a Seek command to the player. </p>
-<p>This method will move the media to the location passed in seekTime parameter.</p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send seek command to the player. This method will move the media to the location passed in seekTime parameter. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">seekTime</td><td>The time point to seek in format HH:MM:SS </td></tr>
@@ -840,15 +818,32 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad8796dbd7fd186b3ef6f5c1b480577de">TVersityAFInvalidParamError</a> The seekTime parameter is not valid</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFInvalidParamError The seekTime parameter is not valid TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac3d485ce2ec060be451adc5d52277b3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setCurrentStatus: </td>
+          <td></td>
+          <td class="paramtype">(TVersityAFDeviceStatus)&#160;</td>
+          <td class="paramname"><em>status</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -865,7 +860,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">block:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -881,9 +876,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sets the playing volume of the player. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Sets the playing volume of the player. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">newVolume</td><td>The new volume to set </td></tr>
@@ -892,13 +885,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -910,7 +897,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">- (BOOL) stop: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="group___players.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a>)&#160;</td>
+          <td class="paramtype">(TVersityAFCommandBlock)&#160;</td>
           <td class="paramname"><em>block</em></td>
         </tr>
         <tr>
@@ -926,9 +913,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Sends a Stop command to the player. </p>
-<p>This method returns the result of the command asynchronously.</p>
+<p>Send stop command to the player. This method returns the result of the command asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>A block to be called asynchronously with the result of the command. The block is called in the main thread of the application. </td></tr>
@@ -936,13 +921,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
-<ul>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
-<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
-</ul>
+<p>This method can return one of the following error codes: TVersityAFInvalidDeviceError No device is known with the specified id TVersityAFDeviceOfflineError The device is offline and cannot be accessed TVersityAFInvalidCommandError The device does not support this command or its current state does not allow it TVersityAFUnknownError</p>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error accured. </dd></dl>
 
 </div>
@@ -965,8 +944,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The duration of the current media loaded in the player. </p>
 
-<p>The duration of the current media of the player. nil if no media is loaded. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00067">67</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +958,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="group___devices.html#ga9605f94167ee44f963a79c4300e0ae4e">TVersityAFDeviceStatus</a>) currentStatus</td>
+          <td class="memname">- (TVersityAFDeviceStatus) currentStatus</td>
         </tr>
       </table>
   </td>
@@ -987,10 +967,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Device current status. Notice this value does not update dynamically. It represents the status of the device at the moment this instance of the object was created. To get real time updates on a device status, register to the TVersityAFEventPlayerStatusChange or TVersityAFEventServerStatusChange events. </p>
 
-<p>Device current status. </p>
-<p>Notice this value does not update dynamically. It represents the status of the device at the moment this instance of the object was created.</p>
-<p>To get real time updates on a device status, register to the <a class="el" href="group___devices.html#gga5a004483ddae2acd127edd1470dd8117acf82100f29163c8ff7f8cb1aed3d5ac6">TVersityAFEventPlayerStatusChange</a> or <a class="el" href="group___devices.html#gga5a004483ddae2acd127edd1470dd8117a68916fce3903d9bcb71960228af324a7">TVersityAFEventServerStatusChange</a> events. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_device_8h_source.html#l00077">77</a> of file <a class="el" href="_t_versity_a_f_device_8h_source.html">TVersityAFDevice.h</a>.</p>
 
 </div>
 </div>
@@ -1011,8 +990,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>A desciptive name to current status of the device </p>
 
-<p>A desciptive name to current status of the device. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_device_8h_source.html#l00082">82</a> of file <a class="el" href="_t_versity_a_f_device_8h_source.html">TVersityAFDevice.h</a>.</p>
 
 </div>
 </div>
@@ -1033,8 +1013,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The title of the current media loaded in the player, or nil if none. </p>
 
-<p>The title of the current media of the player. nil if no media is loaded. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00072">72</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
 
 </div>
 </div>
@@ -1055,8 +1036,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get the uri currently loaded in the player, or nil if none. </p>
 
-<p>Get the URI currently loaded in the playe. nil if no media is loaded. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00077">77</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
 
 </div>
 </div>
@@ -1077,8 +1059,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
 <p>Bitwise combination of TVersityAFPlayerCapabilites values. Indicates whether the player supports certain features or not. </p>
+
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00082">82</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
 
 </div>
 </div>
@@ -1099,8 +1082,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The device Id </p>
 
-<p>The device Id. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_device_8h_source.html#l00087">87</a> of file <a class="el" href="_t_versity_a_f_device_8h_source.html">TVersityAFDevice.h</a>.</p>
 
 </div>
 </div>
@@ -1121,8 +1105,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The device name </p>
 
-<p>The device name. </p>
+<p>Definition at line <a class="el" href="_t_versity_a_f_device_8h_source.html#l00092">92</a> of file <a class="el" href="_t_versity_a_f_device_8h_source.html">TVersityAFDevice.h</a>.</p>
 
 </div>
 </div>
@@ -1143,18 +1128,16 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
 <p>The mime types supported by the player. A comma separated list of supported mime types. </p>
 
+<p>Definition at line <a class="el" href="_t_versity_a_f_player_8h_source.html#l00100">100</a> of file <a class="el" href="_t_versity_a_f_player_8h_source.html">TVersityAFPlayer.h</a>.</p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_t_versity_a_f_player_8h.html">TVersityAFPlayer.h</a></li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 5 2012 01:24:13 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 4 2012 14:08:12 for AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
