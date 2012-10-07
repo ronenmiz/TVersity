@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>AirFlinger iOS SDK: TVersityAFMediaItem Class Reference</title>
+<title>TVersity AirFlinger iOS SDK: TVersityAFMediaItem Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">AirFlinger iOS SDK
+   <div id="projectname">TVersity AirFlinger iOS SDK
    </div>
+   <div id="projectbrief">TVersity is a software solution for operators and service providers that brings the best of Google TV and Apple TV to set-top boxes, connected TVs and other devices.</div>
   </td>
  </tr>
  </tbody>
@@ -37,7 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -58,10 +61,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,18 +85,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Class Methods</a> &#124;
-<a href="#properties">Properties</a>  </div>
+<a href="#properties">Properties</a> &#124;
+<a href="class_t_versity_a_f_media_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFMediaItem Class Reference</div>  </div>
+<div class="title">TVersityAFMediaItem Class Reference<div class="ingroups"><a class="el" href="group___o_s_assets.html">Helper Types for Browing the Device Assets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#import &lt;<a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for TVersityAFMediaItem:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<p>A uniform representation of an OS media item / asset.  
+ <a href="interface_t_versity_a_f_media_item.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for TVersityAFMediaItem:</div>
+<div class="dyncontent">
  <div class="center">
   <img src="interface_t_versity_a_f_media_item.png" usemap="#TVersityAFMediaItem_map" alt=""/>
   <map id="TVersityAFMediaItem_map" name="TVersityAFMediaItem_map">
@@ -103,35 +106,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#a48fffd15b27bd4e28ade7949e90a4b6e">initWithAsset:</a></td></tr>
+<tr class="memdesc:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object.  <a href="#a48fffd15b27bd4e28ade7949e90a4b6e"></a><br/></td></tr>
 <tr class="separator:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1829499fd2f83a3159a5c66da4c44cc"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc">initWithAsset:andLibrary:</a></td></tr>
+<tr class="memdesc:af1829499fd2f83a3159a5c66da4c44cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object and pass a reference to <b>ALAssetsLibrary</b> to ensure a source ALAsset will remain valid during the lifetime of the object.  <a href="#af1829499fd2f83a3159a5c66da4c44cc"></a><br/></td></tr>
 <tr class="separator:af1829499fd2f83a3159a5c66da4c44cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a0ec5262ef06d86d35b85967c218d8f99"><td class="memItemLeft" align="right" valign="top">TVersityAFMediaType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a0ec5262ef06d86d35b85967c218d8f99">type</a></td></tr>
-<tr class="separator:a0ec5262ef06d86d35b85967c218d8f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba685f939b943306a4d36984f61f3dc4"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aba685f939b943306a4d36984f61f3dc4">title</a></td></tr>
-<tr class="separator:aba685f939b943306a4d36984f61f3dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c87fa43b742fc86b83c55bf125f647a"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a6c87fa43b742fc86b83c55bf125f647a">URL</a></td></tr>
-<tr class="separator:a6c87fa43b742fc86b83c55bf125f647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c3fa7acb069acdc42898367af081d1"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#ab1c3fa7acb069acdc42898367af081d1">OS_URL</a></td></tr>
-<tr class="separator:ab1c3fa7acb069acdc42898367af081d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa222b74de8f873b249afef20c146c713"><td class="memItemLeft" align="right" valign="top">UIImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aa222b74de8f873b249afef20c146c713">thumbnail</a></td></tr>
-<tr class="separator:aa222b74de8f873b249afef20c146c713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c000e4ef13bf5980764de4246c80320"><td class="memItemLeft" align="right" valign="top">UIImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a2c000e4ef13bf5980764de4246c80320">largeImage</a></td></tr>
-<tr class="separator:a2c000e4ef13bf5980764de4246c80320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc6b5f335eacd46d933204e22a42edd"><td class="memItemLeft" align="right" valign="top">id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aafc6b5f335eacd46d933204e22a42edd">sourceAsset</a></td></tr>
-<tr class="separator:aafc6b5f335eacd46d933204e22a42edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac012c5e36af69f097ac8e004bfe6e351"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#ac012c5e36af69f097ac8e004bfe6e351">hasProtectedContent</a></td></tr>
-<tr class="separator:ac012c5e36af69f097ac8e004bfe6e351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaccab7fe238881ee24e89ac569deb8b0"><td class="memItemLeft" align="right" valign="top">NSTimeInterval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aaccab7fe238881ee24e89ac569deb8b0">duration</a></td></tr>
+<tr class="memdesc:aaccab7fe238881ee24e89ac569deb8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of the item in seconds (when applicable)  <a href="#aaccab7fe238881ee24e89ac569deb8b0"></a><br/></td></tr>
 <tr class="separator:aaccab7fe238881ee24e89ac569deb8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac012c5e36af69f097ac8e004bfe6e351"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#ac012c5e36af69f097ac8e004bfe6e351">hasProtectedContent</a></td></tr>
+<tr class="memdesc:ac012c5e36af69f097ac8e004bfe6e351"><td class="mdescLeft">&#160;</td><td class="mdescRight">An indication if the item points to DRM protected content.  <a href="#ac012c5e36af69f097ac8e004bfe6e351"></a><br/></td></tr>
+<tr class="separator:ac012c5e36af69f097ac8e004bfe6e351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c000e4ef13bf5980764de4246c80320"><td class="memItemLeft" align="right" valign="top">UIImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a2c000e4ef13bf5980764de4246c80320">largeImage</a></td></tr>
+<tr class="memdesc:a2c000e4ef13bf5980764de4246c80320"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full screen version of the image representing this item. Can be nil.  <a href="#a2c000e4ef13bf5980764de4246c80320"></a><br/></td></tr>
+<tr class="separator:a2c000e4ef13bf5980764de4246c80320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c3fa7acb069acdc42898367af081d1"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#ab1c3fa7acb069acdc42898367af081d1">OS_URL</a></td></tr>
+<tr class="memdesc:ab1c3fa7acb069acdc42898367af081d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL used by the OS to access this media item.  <a href="#ab1c3fa7acb069acdc42898367af081d1"></a><br/></td></tr>
+<tr class="separator:ab1c3fa7acb069acdc42898367af081d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc6b5f335eacd46d933204e22a42edd"><td class="memItemLeft" align="right" valign="top">id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aafc6b5f335eacd46d933204e22a42edd">sourceAsset</a></td></tr>
+<tr class="memdesc:aafc6b5f335eacd46d933204e22a42edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original OS asset this item represents.  <a href="#aafc6b5f335eacd46d933204e22a42edd"></a><br/></td></tr>
+<tr class="separator:aafc6b5f335eacd46d933204e22a42edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa222b74de8f873b249afef20c146c713"><td class="memItemLeft" align="right" valign="top">UIImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aa222b74de8f873b249afef20c146c713">thumbnail</a></td></tr>
+<tr class="memdesc:aa222b74de8f873b249afef20c146c713"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thumbnail image of the item. Can be nil.  <a href="#aa222b74de8f873b249afef20c146c713"></a><br/></td></tr>
+<tr class="separator:aa222b74de8f873b249afef20c146c713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba685f939b943306a4d36984f61f3dc4"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aba685f939b943306a4d36984f61f3dc4">title</a></td></tr>
+<tr class="memdesc:aba685f939b943306a4d36984f61f3dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The title of the media item.  <a href="#aba685f939b943306a4d36984f61f3dc4"></a><br/></td></tr>
+<tr class="separator:aba685f939b943306a4d36984f61f3dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec5262ef06d86d35b85967c218d8f99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___o_s_assets.html#ga609f77040972bb24435d6cca199e59d8">TVersityAFMediaType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a0ec5262ef06d86d35b85967c218d8f99">type</a></td></tr>
+<tr class="memdesc:a0ec5262ef06d86d35b85967c218d8f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The media type of this item (i.e. video, music, photo)  <a href="#a0ec5262ef06d86d35b85967c218d8f99"></a><br/></td></tr>
+<tr class="separator:a0ec5262ef06d86d35b85967c218d8f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c87fa43b742fc86b83c55bf125f647a"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#a6c87fa43b742fc86b83c55bf125f647a">URL</a></td></tr>
+<tr class="memdesc:a6c87fa43b742fc86b83c55bf125f647a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL for playing the media with the SDK.  <a href="#a6c87fa43b742fc86b83c55bf125f647a"></a><br/></td></tr>
+<tr class="separator:a6c87fa43b742fc86b83c55bf125f647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A uniform representation of media item of the OS. This object can represents media items from the iPod library or assets library. i.e. AVAsset, MPMediaItem or ALAsset. </p>
-
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00029">29</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<div class="textblock"><p>A uniform representation of an OS media item / asset. </p>
+<p>This object can represents media items from the iPod library or from the PhotoAPP. i.e. AVAsset, MPMediaItem or ALAsset. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a48fffd15b27bd4e28ade7949e90a4b6e"></a>
 <div class="memitem">
@@ -146,7 +159,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Init item with an OS asset object. Notice that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. </p>
+
+<p>Initialize a new item object with an OS asset object. </p>
+<p><b>Notice</b> that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. Therefore, for ALAsset objects, it is recommended to use <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc" title="Initialize a new item object with an OS asset object and pass a reference to ALAssetsLibrary to ensur...">initWithAsset:andLibrary:</a> </p>
 
 </div>
 </div>
@@ -173,7 +188,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Init item with an OS asset object. notice - library is optional, relevant only to ALAsset and used just to retain the library so the ALAsset will not become invalid. </p>
+
+<p>Initialize a new item object with an OS asset object and pass a reference to <b>ALAssetsLibrary</b> to ensure a source ALAsset will remain valid during the lifetime of the object. </p>
+<p><b>Notice</b> - library is optional, relevant only to ALAsset and used just to retain the library so the ALAsset will not become invalid. </p>
 
 </div>
 </div>
@@ -195,9 +212,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The duration of the item in seconds (when applicable) </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00078">78</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The duration of the item in seconds (when applicable) </p>
 
 </div>
 </div>
@@ -218,9 +234,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>YES if this item represents protected content. If it does, its content will not be accessible. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00073">73</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>An indication if the item points to DRM protected content. </p>
+<p>YES if this item represents protected content. If it does, its content will not be accessible. </p>
 
 </div>
 </div>
@@ -241,9 +257,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The large version of the image representing this item. Can be nil. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00060">60</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The full screen version of the image representing this item. Can be nil. </p>
 
 </div>
 </div>
@@ -264,9 +279,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The URL used by the OS to access this media item. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00050">50</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The URL used by the OS to access this media item. </p>
 
 </div>
 </div>
@@ -287,9 +301,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The OS assert holding this item. You can use this object to extract from the item informatiion that is not provided by the SDK. The returned object can be of kind ALAsset|AVAsset|MPMediaItem </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00067">67</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The original OS asset this item represents. </p>
+<p>You can use this object to extract information that is not provided by the SDK. The returned object can be one of ALAsset or AVAsset or MPMediaItem. </p>
 
 </div>
 </div>
@@ -310,9 +324,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Thumbnail representing this item. Can be nil. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00055">55</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The thumbnail image of the item. Can be nil. </p>
 
 </div>
 </div>
@@ -333,9 +346,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The title of the media item. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00039">39</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The title of the media item. </p>
 
 </div>
 </div>
@@ -347,7 +359,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (TVersityAFMediaType) type</td>
+          <td class="memname">- (<a class="el" href="group___o_s_assets.html#ga609f77040972bb24435d6cca199e59d8">TVersityAFMediaType</a>) type</td>
         </tr>
       </table>
   </td>
@@ -356,9 +368,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The type of the media this item hold </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00034">34</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The media type of this item (i.e. video, music, photo) </p>
 
 </div>
 </div>
@@ -379,16 +390,19 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The URL for playing the media with the SDK. Pass this URL to <a class="el" href="interface_t_versity_a_f_player.html">TVersityAFPlayer</a> playURI method. </p>
 
-<p>Definition at line <a class="el" href="_t_versity_a_f_media_item_8h_source.html#l00045">45</a> of file <a class="el" href="_t_versity_a_f_media_item_8h_source.html">TVersityAFMediaItem.h</a>.</p>
+<p>The URL for playing the media with the SDK. </p>
+<p>You can pass this URL to <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media and getting information about the play...">TVersityAFPlayer</a> playURI method. </p>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_t_versity_a_f_media_item_8h.html">TVersityAFMediaItem.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 4 2012 14:08:12 for AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 7 2012 18:06:45 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
