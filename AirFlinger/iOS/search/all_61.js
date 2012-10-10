@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['airflinger_20startup_20types',['AirFlinger startup types',['../group___main.html',1,'']]]
+  ['airflinger_20startup',['AirFlinger startup',['../group___main.html',1,'']]]
 ];

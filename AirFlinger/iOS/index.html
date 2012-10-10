@@ -88,16 +88,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>To start using the SDK, begin with the <a class="el" href="interface_t_versity_a_f_air_flinger.html" title="This is the main AirFlinger class. With this class you start, initialize and terminate the AirFlinger...">TVersityAFAirFlinger</a> class.<br/>
  Using this class you initialize the SDK and get a collection of media devices identified on the network.<br/>
  Once you have the collection of devices, you can control them or query them using the subclasses of the <a class="el" href="interface_t_versity_a_f_device.html" title="An abstract class that provides common information about a device. You can get the current devices by...">TVersityAFDevice</a>.<br/>
- With a <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media and getting information about the play...">TVersityAFPlayer</a> class, you can get information and control playback of media on a media renderer device.<br/>
- With a TVeristyAFServer class, you can get information and browse the media available on a media server.<br/>
+ With a <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a> class, you can get information and control playback of media on a media renderer device.<br/>
+ With a <a class="el" href="interface_t_versity_a_f_server.html" title="A media server device. With this class you can browse the content of the media server.">TVersityAFServer</a> class, you can get information and browse the media available on a media server.<br/>
 </p>
-<p>Other capabilites provided by this SDK are in helper classes which extend the iOS to provide easier access to media items, or add to existing iOS components features related to "media Flinging".<br/>
- Check the Helpers modules for more details.</p>
-<p>A good way to continue from here is to check the Modules page, and examine the demo application provided with the SDK. </p>
+<p>Other capabilites provided by this SDK are in helper classes which extend iOS to provide easier access to media items, or add features related to "media Flinging" to existing components.<br/>
+ Check the <a class="el" href="group___helpers.html">Helpers</a> modules for more details.</p>
+<p><a class="anchor" id="main_about_blocks"></a> <b>About blocks</b>: A common practice is the SDK is to use blocks for returning a result in case of asynchrouns invocations.<br/>
+ A member function that accepts a block as a paremeter, returns immediately.<br/>
+ The block will be called asynchronously with the result of the asynchronous invocation of the method.<br/>
+ Invocations of result blocks always occur in the main thread of the application.<br/>
+ Notice that such methods can fail either in the synchronous part or the asynchronous part of the invocation.<br/>
+ For example, if you call <a class="el" href="interface_t_versity_a_f_player.html#aaa880d811ce4a51fd576b4a5ae30f3fb">playURI </a> method of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a>, this method can fail in the synchronous part if for example you pass an invalid URI parameter. In that case it will return the error immedialty.<br/>
+ If however everything is valid, the synchronous part will return without an error. The command will then be sent to the player device.<br/>
+ The player will return an asynchronous response to this command which can contain an error, if for example the URI could not be accessed.</p>
+<p>A good way to continue from here is to check the <a href="modules.html">Modules</a> page, and examine the demo application provided with the SDK. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:45 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

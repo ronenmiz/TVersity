@@ -89,11 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_resource-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFResource Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Server Browsing Related Types</a></div></div>  </div>
+<div class="title">TVersityAFResource Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Media Server Browsing</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This object contains the information about a single resouce of a server media item.  
+<p>This object contains the information about a single resouce of a media item returned by a media server browse request.  
  <a href="interface_t_versity_a_f_resource.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TVersityAFResource:</div>
@@ -126,7 +126,8 @@ Properties</h2></td></tr>
 <tr class="separator:abe40cbd7e06ad539f5c5f7cd803b6185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This object contains the information about a single resouce of a server media item. </p>
+<div class="textblock"><p>This object contains the information about a single resouce of a media item returned by a media server browse request. </p>
+<p>Generally you will not create such objects yourself, but get them in the block returned by calling <a class="el" href="interface_t_versity_a_f_server.html#a074265d2505982d4ec2bab3e3ab4c480" title="Get the children of one of the child objects of this server.">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error: (TVersityAFServer)</a> </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a298b2e2605c9ed4c02d9e6a9e450eb3a"></a>
 <div class="memitem">
@@ -202,7 +203,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates and returns an initialized object Only uri parameter must be assigned. Other parameters are optional. </p>
+<p>Creates and returns an initialized resource object.<br/>
+ Only uri parameter must be assigned. Other parameters are optional. </p>
 
 </div>
 </div>
@@ -297,7 +299,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:45 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 13:44:57 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

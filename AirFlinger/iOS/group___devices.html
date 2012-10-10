@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>TVersity AirFlinger iOS SDK: Device related types</title>
+<title>TVersity AirFlinger iOS SDK: Devices</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,26 +76,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Device related types</div>  </div>
+<div class="title">Devices</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Device related types.  
+<p>Accessing and controlling media devices on the network.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group___players"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___players.html">Player devices</a></td></tr>
+<tr class="memdesc:group___players"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesssing and controlling player devices (media renderers) <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group___server_browsing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_browsing.html">Media Server Browsing</a></td></tr>
+<tr class="memdesc:group___server_browsing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Browsing the content of a media server. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html">TVersityAFDevice</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class that provides common information about a device. You can get the current devices by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a>  <a href="interface_t_versity_a_f_device.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class that provides common information about a device. You can get the current devices by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40" title="Get available devices.">getCurrentDevices: (TVersityAFAirFlinger)</a>  <a href="interface_t_versity_a_f_device.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_player.html">TVersityAFPlayer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Player device provides the functionality for playing media and getting information about the playing media, as well as general information about the device. You can get the current players by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a>  <a href="interface_t_versity_a_f_player.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Player device provides the functionality for playing media, getting information about the media and getting information about the player device.  <a href="interface_t_versity_a_f_player.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_server.html">TVersityAFServer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A server device. You can get the current servers by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a>  <a href="interface_t_versity_a_f_server.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A media server device. With this class you can browse the content of the media server.  <a href="interface_t_versity_a_f_server.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -128,7 +138,7 @@ Enumerations</h2></td></tr>
 <tr class="separator:ga5a004483ddae2acd127edd1470dd8117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Device related types. </p>
+<p>Accessing and controlling media devices on the network. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga9605f94167ee44f963a79c4300e0ae4e"></a>
 <div class="memitem">
@@ -184,7 +194,7 @@ Enumerations</h2></td></tr>
 <p>Defines mask values for registering to event notifications. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="gga5a004483ddae2acd127edd1470dd8117a153810db5892b1a6c0f991b15839dbc0"></a>TVersityAFEventNone</em>&nbsp;</td><td>
-<p>Used to register to none of the event types </p>
+<p>Use in case you do not want to register to any event </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="gga5a004483ddae2acd127edd1470dd8117a194984bcc19f376c43fc32138c822e18"></a>TVersityAFEventPlayerVolumeChanged</em>&nbsp;</td><td>
 <p>This event is fired when a player volume has changed. </p>
@@ -210,7 +220,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:44 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

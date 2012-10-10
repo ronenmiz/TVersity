@@ -88,11 +88,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_server-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFServer Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Server Browsing Related Types</a> &#124; <a class="el" href="group___devices.html">Device related types</a></div></div>  </div>
+<div class="title">TVersityAFServer Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Media Server Browsing</a> &#124; <a class="el" href="group___devices.html">Devices</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A server device. You can get the current servers by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a>  
+<p>A media server device. With this class you can browse the content of the media server.  
  <a href="interface_t_versity_a_f_server.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TVersityAFServer:</div>
@@ -106,9 +106,9 @@ Inheritance diagram for TVersityAFServer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:a074265d2505982d4ec2bab3e3ab4c480"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_server.html#a074265d2505982d4ec2bab3e3ab4c480">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error:</a></td></tr>
-<tr class="memdesc:a074265d2505982d4ec2bab3e3ab4c480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the children of one of the child objects of this server.  <a href="#a074265d2505982d4ec2bab3e3ab4c480"></a><br/></td></tr>
-<tr class="separator:a074265d2505982d4ec2bab3e3ab4c480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682df5ba35445f6e47cfd4a509e03ba7"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_server.html#a682df5ba35445f6e47cfd4a509e03ba7">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error:</a></td></tr>
+<tr class="memdesc:a682df5ba35445f6e47cfd4a509e03ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the children of one of the child objects of this server.  <a href="#a682df5ba35445f6e47cfd4a509e03ba7"></a><br/></td></tr>
+<tr class="separator:a682df5ba35445f6e47cfd4a509e03ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8390b1df3ab77b9dc81e97a23d8acae"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_server.html#af8390b1df3ab77b9dc81e97a23d8acae">browseChildrenWithBlock:startIndex:fetchCount:error:</a></td></tr>
 <tr class="memdesc:af8390b1df3ab77b9dc81e97a23d8acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the children objects of this server.  <a href="#af8390b1df3ab77b9dc81e97a23d8acae"></a><br/></td></tr>
 <tr class="separator:af8390b1df3ab77b9dc81e97a23d8acae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,10 +116,10 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___devices.html#ga9605f94167ee44f963a79c4300e0ae4e">TVersityAFDeviceStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0cf0bab4a61fad8ef6c8fa13c2b6d807">currentStatus</a></td></tr>
-<tr class="memdesc:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device current status.  <a href="#a0cf0bab4a61fad8ef6c8fa13c2b6d807"></a><br/></td></tr>
+<tr class="memdesc:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current device status.  <a href="#a0cf0bab4a61fad8ef6c8fa13c2b6d807"></a><br/></td></tr>
 <tr class="separator:a0cf0bab4a61fad8ef6c8fa13c2b6d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a0ef473d1a3e2f44aa32d805544acc2b9">currentStatusName</a></td></tr>
-<tr class="memdesc:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A desciptive name to current status of the device.  <a href="#a0ef473d1a3e2f44aa32d805544acc2b9"></a><br/></td></tr>
+<tr class="memdesc:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A desciptive name to the current device status.  <a href="#a0ef473d1a3e2f44aa32d805544acc2b9"></a><br/></td></tr>
 <tr class="separator:a0ef473d1a3e2f44aa32d805544acc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398e68bc601fe023ad49dec36f5e371e"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html#a398e68bc601fe023ad49dec36f5e371e">deviceId</a></td></tr>
 <tr class="memdesc:a398e68bc601fe023ad49dec36f5e371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The device Id.  <a href="#a398e68bc601fe023ad49dec36f5e371e"></a><br/></td></tr>
@@ -129,9 +129,11 @@ Properties</h2></td></tr>
 <tr class="separator:a5f2b3dd994a38dd40ece707f21bf4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A server device. You can get the current servers by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40">getCurrentDevices: (TVersityAFAirFlinger)</a> </p>
+<div class="textblock"><p>A media server device. With this class you can browse the content of the media server. </p>
+<p>You can get the current servers by calling <a class="el" href="interface_t_versity_a_f_air_flinger.html#a445954d29d444f7cfefdd23f0dc00a40" title="Get available devices.">getCurrentDevices: (TVersityAFAirFlinger)</a></p>
+<p>The server device methods use blocks to return asynchronous result of the invocation. For some details on that, checkout the <a class="el" href="index.html#main_about_blocks">about blocks</a> paragraph in the SDK main page. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a074265d2505982d4ec2bab3e3ab4c480"></a>
+<a class="anchor" id="a682df5ba35445f6e47cfd4a509e03ba7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -144,7 +146,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">ofObject:</td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_versity_a_f_object.html">TVersityAFObject</a> *)&#160;</td>
+          <td class="paramtype">(<a class="el" href="interface_t_versity_a_f_server_object.html">TVersityAFServerObject</a> *)&#160;</td>
           <td class="paramname"><em>object</em></td>
         </tr>
         <tr>
@@ -186,7 +188,8 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
+<p>This method can return an NSError object with an error code in outError parameter, or asynchronously in the error parameter of the block.<br/>
+ In either case, the error code will be one of the following:</p>
 <ul>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
@@ -235,7 +238,7 @@ Properties</h2></td></tr>
 
 <p>Get the children objects of this server. </p>
 <p>Objects can be containers or items.</p>
-<p>This method returns the same result as calling browseChildrenWithBlock:ofObject:startIndex:fetchCount:error: with ofObject parameter nil.</p>
+<p>This method returns the same result as calling <a class="el" href="interface_t_versity_a_f_server.html#a682df5ba35445f6e47cfd4a509e03ba7" title="Get the children of one of the child objects of this server.">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error:</a> with ofObject parameter nil.</p>
 <p>The block is called asynchronously in the main thread of the application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -246,7 +249,8 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can return one of the following error codes:</p>
+<p>This method can return an NSError object with an error code in outError parameter, or asynchronously in the error parameter of the block.<br/>
+ In either case, the error code will be one of the following:</p>
 <ul>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
@@ -276,7 +280,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Device current status. </p>
+<p>Current device status. </p>
 <p>Notice this value does not update dynamically. It represents the status of the device at the moment this instance of the object was created.</p>
 <p>To get real time updates on a device status, register to the <a class="el" href="group___devices.html#gga5a004483ddae2acd127edd1470dd8117acf82100f29163c8ff7f8cb1aed3d5ac6">TVersityAFEventPlayerStatusChange</a> or <a class="el" href="group___devices.html#gga5a004483ddae2acd127edd1470dd8117a68916fce3903d9bcb71960228af324a7">TVersityAFEventServerStatusChange</a> events. </p>
 
@@ -300,7 +304,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A desciptive name to current status of the device. </p>
+<p>A desciptive name to the current device status. </p>
 
 </div>
 </div>
@@ -354,7 +358,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:45 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

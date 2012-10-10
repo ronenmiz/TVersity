@@ -89,11 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_image-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFImage Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Server Browsing Related Types</a></div></div>  </div>
+<div class="title">TVersityAFImage Class Reference<div class="ingroups"><a class="el" href="group___server_browsing.html">Media Server Browsing</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An image media item returned by a server browse request.  
+<p>An image media item returned by a media server browse request.  
  <a href="interface_t_versity_a_f_image.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TVersityAFImage:</div>
@@ -101,8 +101,8 @@ Inheritance diagram for TVersityAFImage:</div>
  <div class="center">
   <img src="interface_t_versity_a_f_image.png" usemap="#TVersityAFImage_map" alt=""/>
   <map id="TVersityAFImage_map" name="TVersityAFImage_map">
-<area href="interface_t_versity_a_f_item.html" title="A base class for media items returned by a server browse request. Subclasses of TVersityAFItem repres..." alt="TVersityAFItem" shape="rect" coords="0,112,113,136"/>
-<area href="interface_t_versity_a_f_object.html" title="The base class of a single object returned from a server browse request." alt="TVersityAFObject" shape="rect" coords="0,56,113,80"/>
+<area href="interface_t_versity_a_f_item.html" title="A base class for media items returned by a media server browse request." alt="TVersityAFItem" shape="rect" coords="0,112,113,136"/>
+<area href="interface_t_versity_a_f_object.html" title="The base class of a single object returned by a media server browse request." alt="TVersityAFObject" shape="rect" coords="0,56,113,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -132,7 +132,8 @@ Properties</h2></td></tr>
 <tr class="separator:af4171925f433448974e70f63d4e736fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An image media item returned by a server browse request. </p>
+<div class="textblock"><p>An image media item returned by a media server browse request. </p>
+<p>Generally you will not create such objects yourself, but get them in the block returned by calling <a class="el" href="interface_t_versity_a_f_server.html#a074265d2505982d4ec2bab3e3ab4c480" title="Get the children of one of the child objects of this server.">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error: (TVersityAFServer)</a> </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a2538d606b1cd2fb2af566f6b552a37fb"></a>
 <div class="memitem">
@@ -241,7 +242,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates and returns an initialized object Only id parameter must be assigned. Other parameters are optional. </p>
+<p>Creates and returns an initialized item object.<br/>
+ Only itemId parameter must be assigned. Other parameters are optional. </p>
 
 </div>
 </div>
@@ -274,7 +276,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates and returns an initialized object Only id parameter must be assigned. Other parameters are optional. </p>
+<p>Creates and returns an initialized object.<br/>
+ Only objectId parameter must be assigned. Other parameters are optional. </p>
 
 </div>
 </div>
@@ -359,7 +362,7 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>An array of <a class="el" href="interface_t_versity_a_f_resource.html" title="This object contains the information about a single resouce of a server media item.">TVersityAFResource</a> objects which are the available resources of this item. </p>
+<p>An array of <a class="el" href="interface_t_versity_a_f_resource.html" title="This object contains the information about a single resouce of a media item returned by a media serve...">TVersityAFResource</a> objects which are the available resources of this item. </p>
 
 </div>
 </div>
@@ -369,7 +372,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:44 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 13:44:57 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

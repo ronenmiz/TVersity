@@ -88,11 +88,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_media_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFMediaItem Class Reference<div class="ingroups"><a class="el" href="group___o_s_assets.html">Helper Types for Browing the Device Assets</a></div></div>  </div>
+<div class="title">TVersityAFMediaItem Class Reference<div class="ingroups"><a class="el" href="group___o_s_assets.html">Browing an iOS Device Assets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A uniform representation of an OS media item / asset.  
+<p>A uniform representation of an iOS media item (asset).  
  <a href="interface_t_versity_a_f_media_item.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TVersityAFMediaItem:</div>
@@ -115,7 +115,7 @@ Class Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aaccab7fe238881ee24e89ac569deb8b0"><td class="memItemLeft" align="right" valign="top">NSTimeInterval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#aaccab7fe238881ee24e89ac569deb8b0">duration</a></td></tr>
-<tr class="memdesc:aaccab7fe238881ee24e89ac569deb8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of the item in seconds (when applicable)  <a href="#aaccab7fe238881ee24e89ac569deb8b0"></a><br/></td></tr>
+<tr class="memdesc:aaccab7fe238881ee24e89ac569deb8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration of the item in seconds (when applicable).  <a href="#aaccab7fe238881ee24e89ac569deb8b0"></a><br/></td></tr>
 <tr class="separator:aaccab7fe238881ee24e89ac569deb8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac012c5e36af69f097ac8e004bfe6e351"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html#ac012c5e36af69f097ac8e004bfe6e351">hasProtectedContent</a></td></tr>
 <tr class="memdesc:ac012c5e36af69f097ac8e004bfe6e351"><td class="mdescLeft">&#160;</td><td class="mdescRight">An indication if the item points to DRM protected content.  <a href="#ac012c5e36af69f097ac8e004bfe6e351"></a><br/></td></tr>
@@ -143,7 +143,7 @@ Properties</h2></td></tr>
 <tr class="separator:a6c87fa43b742fc86b83c55bf125f647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A uniform representation of an OS media item / asset. </p>
+<div class="textblock"><p>A uniform representation of an iOS media item (asset). </p>
 <p>This object can represents media items from the iPod library or from the PhotoAPP. i.e. AVAsset, MPMediaItem or ALAsset. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a48fffd15b27bd4e28ade7949e90a4b6e"></a>
@@ -161,7 +161,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize a new item object with an OS asset object. </p>
-<p><b>Notice</b> that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. Therefore, for ALAsset objects, it is recommended to use <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc" title="Initialize a new item object with an OS asset object and pass a reference to ALAssetsLibrary to ensur...">initWithAsset:andLibrary:</a> </p>
+<p>Generally you do not need to create a <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> yourself. You'll get it from the <a class="el" href="interface_t_versity_a_f_media_provider.html" title="Provides a uniform interface for accessing any kind of media item supported by the OS...">TVersityAFMediaProvider</a>.</p>
+<p><b>Notice</b> that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. Therefore, for ALAsset objects, it is recommended to use <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc" title="Initialize a new item object with an OS asset object and pass a reference to ALAssetsLibrary to ensur...">initWithAsset:andLibrary:</a> </p>
 
 </div>
 </div>
@@ -190,6 +191,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize a new item object with an OS asset object and pass a reference to <b>ALAssetsLibrary</b> to ensure a source ALAsset will remain valid during the lifetime of the object. </p>
+<p>Generally you do not need to create a <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> yourself. You'll get it from the <a class="el" href="interface_t_versity_a_f_media_provider.html" title="Provides a uniform interface for accessing any kind of media item supported by the OS...">TVersityAFMediaProvider</a>.</p>
 <p><b>Notice</b> - library is optional, relevant only to ALAsset and used just to retain the library so the ALAsset will not become invalid. </p>
 
 </div>
@@ -213,7 +215,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The duration of the item in seconds (when applicable) </p>
+<p>The duration of the item in seconds (when applicable). </p>
 
 </div>
 </div>
@@ -303,7 +305,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The original OS asset this item represents. </p>
-<p>You can use this object to extract information that is not provided by the SDK. The returned object can be one of ALAsset or AVAsset or MPMediaItem. </p>
+<p>You can use this object to extract information that is not provided by the SDK. The returned object can be one of ALAsset, AVAsset or MPMediaItem. </p>
 
 </div>
 </div>
@@ -392,7 +394,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The URL for playing the media with the SDK. </p>
-<p>You can pass this URL to <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media and getting information about the play...">TVersityAFPlayer</a> playURI method. </p>
+<p>You can pass this URL to the <a class="el" href="interface_t_versity_a_f_player.html#aaa880d811ce4a51fd576b4a5ae30f3fb">playURI </a> method of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a>. </p>
 
 </div>
 </div>
@@ -402,7 +404,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:45 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>TVersity AirFlinger iOS SDK: Helper Types for Browing the Device Assets</title>
+<title>TVersity AirFlinger iOS SDK: Browing an iOS Device Assets</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,17 +81,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Helper Types for Browing the Device Assets</div>  </div>
-</div><!--header-->
+<div class="title">Browing an iOS Device Assets</div>  </div>
+<div class="ingroups"><a class="el" href="group___helpers.html">Helpers</a></div></div><!--header-->
 <div class="contents">
 
-<p>Helper Classes for Browing an iOS Device Assets.  
+<p>Helpers for Browing an iOS Device Assets.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uniform representation of an OS media item / asset.  <a href="interface_t_versity_a_f_media_item.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uniform representation of an iOS media item (asset).  <a href="interface_t_versity_a_f_media_item.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_media_provider.html">TVersityAFMediaProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a uniform interface for accessing any kind of media item supported by the OS.  <a href="interface_t_versity_a_f_media_provider.html#details">More...</a><br/></td></tr>
@@ -110,7 +110,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="group___o_s_assets.html#gga609f77040972bb24435d6cca199e59d8aceb367df79b8ecf962143bde673be2eb">TVersityAFMediaTypeVideo</a> = 2, 
 <a class="el" href="group___o_s_assets.html#gga609f77040972bb24435d6cca199e59d8ae398962774e1dc2be4effdca977d12df">TVersityAFMediaTypePhoto</a> = 3
  }</td></tr>
-<tr class="memdesc:ga609f77040972bb24435d6cca199e59d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of media that <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> can contain.  <a href="group___o_s_assets.html#ga609f77040972bb24435d6cca199e59d8">More...</a><br/></td></tr>
+<tr class="memdesc:ga609f77040972bb24435d6cca199e59d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of media that <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> can contain.  <a href="group___o_s_assets.html#ga609f77040972bb24435d6cca199e59d8">More...</a><br/></td></tr>
 <tr class="separator:ga609f77040972bb24435d6cca199e59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -120,7 +120,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga11d7721e39b2c3199394c7d91908d607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Helper Classes for Browing an iOS Device Assets. </p>
+<p>Helpers for Browing an iOS Device Assets. </p>
+<p>Media assets on iOS can be represented by different object types from different frameworks. For example the Assets Library framework provides access to photos with an ALAsset object. The AV Foundation framework provides access to videos with an AVAsset object, and the Media Player framework provides access to music with an MPMediaItem object.</p>
+<p>The helpers in this module provide a uniform intefrace for accessing assets from all of these frameworks and using them with the AirFlinger SDK. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="gaaae60d93a91b740b86f32b064c128cc9"></a>
 <div class="memitem">
@@ -136,7 +138,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">assets</td><td>An array of <a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> objects. </td></tr>
-    <tr><td class="paramname">error</td><td>This paramaeter will be set with the NSError object in case of an error. </td></tr>
+    <tr><td class="paramname">error</td><td>This paramaeter will be set with the NSError object in case of an error. For a description of possible error values check the methods that use this block type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -154,7 +156,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Types of media that <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an OS media item / asset.">TVersityAFMediaItem</a> can contain. </p>
+<p>Types of media that <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> can contain. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="gga609f77040972bb24435d6cca199e59d8a35acbc621749289c6cce692ed4a33ecb"></a>TVersityAFMediaTypeNone</em>&nbsp;</td><td>
 </td></tr>
@@ -199,7 +201,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of media items to fetch (movie, music,...) - see <a class="el" href="group___o_s_assets.html#ga609f77040972bb24435d6cca199e59d8">TVersityAFMediaType</a> type definition. </td></tr>
-    <tr><td class="paramname">block</td><td>A block to be called asynchronously with the result of the method.</td></tr>
+    <tr><td class="paramname">block</td><td>A block to be called asynchronously with the result of the method. An error object, if exists, is passed directly from a result to a call to the enumerateGroupsWithTypes:usingBlock:failureBlock: method of an ALAssetsLibrary object. Check ALAssetsLibrary documentation for possible error codes.</td></tr>
   </table>
   </dd>
 </dl>
@@ -210,7 +212,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 7 2012 18:06:44 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
