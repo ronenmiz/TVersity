@@ -105,12 +105,12 @@ Inheritance diagram for TVersityAFMediaItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
-<tr class="memitem:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#a48fffd15b27bd4e28ade7949e90a4b6e">initWithAsset:</a></td></tr>
-<tr class="memdesc:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object.  <a href="#a48fffd15b27bd4e28ade7949e90a4b6e"></a><br/></td></tr>
-<tr class="separator:a48fffd15b27bd4e28ade7949e90a4b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1829499fd2f83a3159a5c66da4c44cc"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc">initWithAsset:andLibrary:</a></td></tr>
-<tr class="memdesc:af1829499fd2f83a3159a5c66da4c44cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object and pass a reference to <b>ALAssetsLibrary</b> to ensure a source ALAsset will remain valid during the lifetime of the object.  <a href="#af1829499fd2f83a3159a5c66da4c44cc"></a><br/></td></tr>
-<tr class="separator:af1829499fd2f83a3159a5c66da4c44cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9c482fec5e4eb6e671ad0cde55ac05"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#a6c9c482fec5e4eb6e671ad0cde55ac05">mediaItemWithAsset:</a></td></tr>
+<tr class="memdesc:a6c9c482fec5e4eb6e671ad0cde55ac05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object.  <a href="#a6c9c482fec5e4eb6e671ad0cde55ac05"></a><br/></td></tr>
+<tr class="separator:a6c9c482fec5e4eb6e671ad0cde55ac05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91f962229ec64541fb371139256091e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_versity_a_f_media_item.html#af91f962229ec64541fb371139256091e">mediaItemWithAsset:andLibrary:</a></td></tr>
+<tr class="memdesc:af91f962229ec64541fb371139256091e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new item object with an OS asset object and pass a reference to <b>ALAssetsLibrary</b> to ensure a source ALAsset will remain valid during the lifetime of the object.  <a href="#af91f962229ec64541fb371139256091e"></a><br/></td></tr>
+<tr class="separator:af91f962229ec64541fb371139256091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -146,12 +146,12 @@ Properties</h2></td></tr>
 <div class="textblock"><p>A uniform representation of an iOS media item (asset). </p>
 <p>This object can represents media items from the iPod library or from the PhotoAPP. i.e. AVAsset, MPMediaItem or ALAsset. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a48fffd15b27bd4e28ade7949e90a4b6e"></a>
+<a class="anchor" id="a6c9c482fec5e4eb6e671ad0cde55ac05"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *) initWithAsset: </td>
+          <td class="memname">+ (<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *) mediaItemWithAsset: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>asset</em></td>
@@ -162,16 +162,16 @@ Properties</h2></td></tr>
 
 <p>Initialize a new item object with an OS asset object. </p>
 <p>Generally you do not need to create a <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> yourself. You'll get it from the <a class="el" href="interface_t_versity_a_f_media_provider.html" title="Provides a uniform interface for accessing any kind of media item supported by the OS...">TVersityAFMediaProvider</a>.</p>
-<p><b>Notice</b> that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. Therefore, for ALAsset objects, it is recommended to use <a class="el" href="interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc" title="Initialize a new item object with an OS asset object and pass a reference to ALAssetsLibrary to ensur...">initWithAsset:andLibrary:</a> </p>
+<p><b>Notice</b> that in case of ALAsset - the <a class="el" href="interface_t_versity_a_f_media_item.html" title="A uniform representation of an iOS media item (asset).">TVersityAFMediaItem</a> is only valid as long as the ALAssetLibrary that produced the asset is still valid. Therefore, for ALAsset objects, it is recommended to use <a class="el" href="interface_t_versity_a_f_media_item.html#af91f962229ec64541fb371139256091e" title="Initialize a new item object with an OS asset object and pass a reference to ALAssetsLibrary to ensur...">mediaItemWithAsset:andLibrary:</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="af1829499fd2f83a3159a5c66da4c44cc"></a>
+<a class="anchor" id="af91f962229ec64541fb371139256091e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *) <a class="el" href="interface_t_versity_a_f_media_item.html#a48fffd15b27bd4e28ade7949e90a4b6e">initWithAsset:</a> </td>
+          <td class="memname">+ (<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *) <a class="el" href="interface_t_versity_a_f_media_item.html#a6c9c482fec5e4eb6e671ad0cde55ac05">mediaItemWithAsset:</a> </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>asset</em></td>
@@ -404,7 +404,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2012 17:38:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -111,7 +111,11 @@ Instance Methods</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Attaching <a class="el" href="interface_t_versity_a_f_u_i_web_view_extender.html" title="Attaching TVersityAFUIWebViewExtender object to a UIWebView instance, provides additional functionali...">TVersityAFUIWebViewExtender</a> object to a UIWebView instance, provides additional functionality related to AirFlinger. </p>
 <p>This object sends to the <a class="el" href="interface_t_versity_a_f_u_i_web_view_extender.html#a61a7b109f3a9a247b7dc490130b978d0">mediaDelegate</a> events from an html5 video element (if one exists on the current web page) through the <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html" title="The protocol that a delegate of TVersityAFUIWebViewExtender should implement in order to get events f...">TVersityAFUIWebViewMediaDelegate</a> protocol.</p>
-<dl class="section remark"><dt>Remarks</dt><dd>If more than one video element is found, the element with the widest video content will be the one this object relates to. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>If more than one video element is found on the page, events will be sent from the last video element that started playing.<br/>
+ For example, assuming there are 2 videos A and B on a page.<br/>
+ When you start playing video A, you will get a <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a37311616a538263afe9b9a0ca77c0d26">webViewPlay </a> event from video A element with the url being played.<br/>
+ If you now start playing video B, you will get the <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a37311616a538263afe9b9a0ca77c0d26">webViewPlay </a> event from video B element.<br/>
+ Switching back to video A and clicking resume (or pause and resume if it was not paused), will result in getting <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a37311616a538263afe9b9a0ca77c0d26">webViewPlay </a> event again from video A, since the last video started playing is now video A. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a61a7b109f3a9a247b7dc490130b978d0"></a>
 <div class="memitem">
@@ -155,7 +159,7 @@ Instance Methods</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2012 17:38:20 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

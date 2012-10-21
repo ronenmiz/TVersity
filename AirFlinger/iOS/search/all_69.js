@@ -2,8 +2,6 @@ var searchData=
 [
   ['iconuri',['iconURI',['../interface_t_versity_a_f_server_object.html#ad60f73d3554d64563dfb5d48c6b14165',1,'TVersityAFServerObject']]],
   ['initinstance_3adelegate_3aeventmask_3a',['initInstance:delegate:eventMask:',['../interface_t_versity_a_f_air_flinger.html#ac5bfc314621ed3f7ac12110c7b8111eb',1,'TVersityAFAirFlinger']]],
-  ['initwithasset_3a',['initWithAsset:',['../interface_t_versity_a_f_media_item.html#a48fffd15b27bd4e28ade7949e90a4b6e',1,'TVersityAFMediaItem']]],
-  ['initwithasset_3aandlibrary_3a',['initWithAsset:andLibrary:',['../interface_t_versity_a_f_media_item.html#af1829499fd2f83a3159a5c66da4c44cc',1,'TVersityAFMediaItem']]],
   ['initwithid_3aname_3aicon_3a',['initWithId:name:icon:',['../interface_t_versity_a_f_server_object.html#a6245214bc1ec0ff5e4b4e4b3a09f0ce2',1,'TVersityAFServerObject']]],
   ['initwithid_3aname_3aicon_3aresources_3a',['initWithId:name:icon:resources:',['../interface_t_versity_a_f_server_item.html#a4b1b08f442773b47aca8f064223ac919',1,'TVersityAFServerItem']]],
   ['initwithuri_3amimetype_3aduration_3asize_3a',['initWithURI:mimeType:duration:size:',['../interface_t_versity_a_f_server_resource.html#a0b87ef26a3e2bc4c6ba7e42d71f96117',1,'TVersityAFServerResource']]],

@@ -111,7 +111,7 @@ Instance Methods</h2></td></tr>
 <tr class="memdesc:ab71617b3bb4bbea4b4603dd99c9789af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video playing paused event.  <a href="#ab71617b3bb4bbea4b4603dd99c9789af"></a><br/></td></tr>
 <tr class="separator:ab71617b3bb4bbea4b4603dd99c9789af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37311616a538263afe9b9a0ca77c0d26"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a37311616a538263afe9b9a0ca77c0d26">webViewPlay:url:</a></td></tr>
-<tr class="memdesc:a37311616a538263afe9b9a0ca77c0d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video started playing event.  <a href="#a37311616a538263afe9b9a0ca77c0d26"></a><br/></td></tr>
+<tr class="memdesc:a37311616a538263afe9b9a0ca77c0d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new Video started or resumed playing event.  <a href="#a37311616a538263afe9b9a0ca77c0d26"></a><br/></td></tr>
 <tr class="separator:a37311616a538263afe9b9a0ca77c0d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52d3ed92141fd89cb67b58ce7c73de5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#ad52d3ed92141fd89cb67b58ce7c73de5">webViewPlaying:currentTime:</a></td></tr>
 <tr class="memdesc:ad52d3ed92141fd89cb67b58ce7c73de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video resumed playing event.  <a href="#ad52d3ed92141fd89cb67b58ce7c73de5"></a><br/></td></tr>
@@ -119,9 +119,6 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:ad104b9e183c59ac8e13466ab7cc3f2e4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#ad104b9e183c59ac8e13466ab7cc3f2e4">webViewSeekEnd:currentTime:</a></td></tr>
 <tr class="memdesc:ad104b9e183c59ac8e13466ab7cc3f2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event that occurs after a seek operation on the video has ended.  <a href="#ad104b9e183c59ac8e13466ab7cc3f2e4"></a><br/></td></tr>
 <tr class="separator:ad104b9e183c59ac8e13466ab7cc3f2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8284147986db6f1b7bf87b393cc12843"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a8284147986db6f1b7bf87b393cc12843">webViewSrcChanged:url:</a></td></tr>
-<tr class="memdesc:a8284147986db6f1b7bf87b393cc12843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video source had changed event.  <a href="#a8284147986db6f1b7bf87b393cc12843"></a><br/></td></tr>
-<tr class="separator:a8284147986db6f1b7bf87b393cc12843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The protocol that a delegate of <a class="el" href="interface_t_versity_a_f_u_i_web_view_extender.html" title="Attaching TVersityAFUIWebViewExtender object to a UIWebView instance, provides additional functionali...">TVersityAFUIWebViewExtender</a> should implement in order to get events from an HTML5 video element in a page loaded by a UIWebView. </p>
@@ -235,8 +232,9 @@ Instance Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Video started playing event. </p>
-<p>This event is called when the video element changes state from stopped to playing. The source of this call is an onplay event of the video element as defined by html5 specification.</p>
+<p>A new Video started or resumed playing event. </p>
+<p>This event is called when the video element changes state from stopped to playing, or in the case of more than one video element on a page, when the last video that started playing had changed.<br/>
+ The source of this call can be an onplay event of the video element as defined by html5 specification, or the <a class="el" href="interface_t_versity_a_f_u_i_web_view_extender.html" title="Attaching TVersityAFUIWebViewExtender object to a UIWebView instance, provides additional functionali...">TVersityAFUIWebViewExtender</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webView</td><td>The UIWebView containing the page with the video element. </td></tr>
@@ -281,6 +279,7 @@ Instance Methods</h2></td></tr>
 
 <p>Video resumed playing event. </p>
 <p>This event is called when video playing is resumed. It is called when play resumed after a pause, but also after play started from stopped state. The source of this call is an onplaying event of the video element as defined by html5 specification.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>This event may in some cases be called immediatly after a <a class="el" href="protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html#a37311616a538263afe9b9a0ca77c0d26">webViewPlay:url:</a> event.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">webView</td><td>The UIWebView containing the page with the video element. </td></tr>
@@ -335,57 +334,13 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8284147986db6f1b7bf87b393cc12843"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) webViewSrcChanged: </td>
-          <td></td>
-          <td class="paramtype">(UIWebView *)&#160;</td>
-          <td class="paramname"><em>webView</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">url:</td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>url</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Video source had changed event. </p>
-<p>This event is called after the video element src attribute had changed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">webView</td><td>The UIWebView containing the page with the video element. </td></tr>
-    <tr><td class="paramname">url</td><td>The new url of the video source. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
 <li><a class="el" href="_t_versity_a_f_u_i_web_view_media_delegate_8h.html">TVersityAFUIWebViewMediaDelegate.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2012 17:38:20 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
