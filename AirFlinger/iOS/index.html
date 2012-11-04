@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Stream content from various sources including the web, the host device (device on which the SDK is running) and other sources.<br/>
 </li>
+<li>Control playback of streamed content including play, pause, stop, seek, volume controls and so on.</li>
 </ul>
 <p>We distinguish between two types of devices, players and servers:</p>
 <ul>
@@ -95,8 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Servers represent a source of content with the capability to provide metadata with respect to the content they host as well as deliver that content over the network.<br/>
 </li>
 </ul>
-<p>The SDK is intended to be standard agnostic and indeed it is encapsulating multiple industry standards such that maximum range of devices is supported. Each standard utilizes a different terminology for a players and a server, for example the UPnP and DLNA standards refers to them as Media Renderer and Media Server while the Miracast standard refers to them as Sink and Source devices.</p>
-<p>Once devices were discovered one can send media over the network (Fling) from different sources to player devices and subsequently control the playback of that media.</p>
+<p>The SDK encapsulates multiple industry standards, thus allowing a wider range of devices to be supported.<br/>
+ Each standard utilizes a different terminology for a players and a server.<br/>
+ For example, the UPnP and DLNA standards refers to them as Media Renderer and Media Server while the Miracast standard refers to them as Sink and Source devices.</p>
 <p>This Objective-C SDK is designed for developing applications for the iOS operating system.<br/>
  It is thread safe, but is designed for being used from a GUI application without the need to handle threads or network related issues.<br/>
  Therefore, whenever a method of this SDK should return an asynchronous response, it will be sent in the main thread of the application.</p>
@@ -120,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2012 17:38:20 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 4 2012 10:05:12 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
