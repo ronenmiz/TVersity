@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Instance Methods</a> &#124;
 <a href="#pub-static-methods">Class Methods</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_air_flinger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">TVersityAFAirFlinger Class Reference<div class="ingroups"><a class="el" href="group___main.html">AirFlinger startup</a></div></div>  </div>
@@ -111,15 +112,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a300c2dd24e755f61429b3f2c9b76dbc0"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a300c2dd24e755f61429b3f2c9b76dbc0">initInstance:delegate:eventMask:</a></td></tr>
 <tr class="memdesc:a300c2dd24e755f61429b3f2c9b76dbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the class and register for updates.  <a href="#a300c2dd24e755f61429b3f2c9b76dbc0"></a><br/></td></tr>
 <tr class="separator:a300c2dd24e755f61429b3f2c9b76dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60be49dd3472b457e4987c035f1c4bcb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a60be49dd3472b457e4987c035f1c4bcb">resume:</a></td></tr>
-<tr class="memdesc:a60be49dd3472b457e4987c035f1c4bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to instruct the SDK to resume itself after being suspended.  <a href="#a60be49dd3472b457e4987c035f1c4bcb"></a><br/></td></tr>
-<tr class="separator:a60be49dd3472b457e4987c035f1c4bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1e695728edb2463ae97da0d4ed987d"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a5d1e695728edb2463ae97da0d4ed987d">searchDevices</a></td></tr>
 <tr class="memdesc:a5d1e695728edb2463ae97da0d4ed987d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to instruct the SDK to refresh the list of devices identified on the network.  <a href="#a5d1e695728edb2463ae97da0d4ed987d"></a><br/></td></tr>
 <tr class="separator:a5d1e695728edb2463ae97da0d4ed987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a18d66b15eb562ad04ffa2e8481e10"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a60a18d66b15eb562ad04ffa2e8481e10">suspend:</a></td></tr>
-<tr class="memdesc:a60a18d66b15eb562ad04ffa2e8481e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to instruct the SDK to suspend itself.  <a href="#a60a18d66b15eb562ad04ffa2e8481e10"></a><br/></td></tr>
-<tr class="separator:a60a18d66b15eb562ad04ffa2e8481e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683390c8a00f89ad5d1c9813e23c1fe3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a683390c8a00f89ad5d1c9813e23c1fe3">terminate</a></td></tr>
 <tr class="separator:a683390c8a00f89ad5d1c9813e23c1fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,6 +125,14 @@ Class Methods</h2></td></tr>
  Always use this method to get an instance of the class. Do not instantiate the class yourself.<br/>
  Before using the instance you should initialize it (once) with a call to <a class="el" href="interface_t_versity_a_f_air_flinger.html#a300c2dd24e755f61429b3f2c9b76dbc0">initInstance</a>.  <a href="#ad6742b1589d3d84f578ae7b4dacc53f4"></a><br/></td></tr>
 <tr class="separator:ad6742b1589d3d84f578ae7b4dacc53f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ae0dfbad2f4b9353079a876064703457b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_air_flinger.html#ae0dfbad2f4b9353079a876064703457b">videoTranscodingEnabled</a></td></tr>
+<tr class="memdesc:ae0dfbad2f4b9353079a876064703457b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable / Disable video transcoder .<br/>
+ Use this property to get or set the state of the video transcoder. <br/>
+ By default it is enabled. Changing the value will only affect future streaming and may interrupt existing streams so it is advisable to set it immediately after <a class="el" href="interface_t_versity_a_f_air_flinger.html#a300c2dd24e755f61429b3f2c9b76dbc0">initInstance</a>.  <a href="#ae0dfbad2f4b9353079a876064703457b"></a><br/></td></tr>
+<tr class="separator:ae0dfbad2f4b9353079a876064703457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the main AirFlinger class. With this class you start, initialize and terminate the AirFlinger SDK. Through it you will get access to player and server devices identified on the network. </p>
@@ -230,32 +233,6 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a60be49dd3472b457e4987c035f1c4bcb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) resume: </td>
-          <td></td>
-          <td class="paramtype">(BOOL is_success)&#160;</td>
-          <td class="paramname"><em>callback_block</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call this method to instruct the SDK to resume itself after being suspended. </p>
-<p>Usually, this is a good idea to do once returning from the background - after being suspended. This call is asynchronous and returns immediately.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback_block</td><td>an optional callback </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>YES or NO based on success / failure. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a5d1e695728edb2463ae97da0d4ed987d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,32 +248,6 @@ Class Methods</h2></td></tr>
 
 <p>Call this method to instruct the SDK to refresh the list of devices identified on the network. </p>
 <p>You do not have to call this method in order for the device list to refresh. The SDK keeps updating the device list in the background. However, you may choose to initiate this refresh at a specific time when you want to make sure the device list is the most updated for that time.</p>
-<dl class="section return"><dt>Returns</dt><dd>YES or NO based on success / failure. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a60a18d66b15eb562ad04ffa2e8481e10"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) suspend: </td>
-          <td></td>
-          <td class="paramtype">(BOOL is_success)&#160;</td>
-          <td class="paramname"><em>callback_block</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Call this method to instruct the SDK to suspend itself. </p>
-<p>Usually, this is a good idea to do once entering the background. This call is asynchronous and returns immediately.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback_block</td><td>an optional callback </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>YES or NO based on success / failure. </dd></dl>
 
 </div>
@@ -317,13 +268,38 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="ae0dfbad2f4b9353079a876064703457b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) videoTranscodingEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable / Disable video transcoder .<br/>
+ Use this property to get or set the state of the video transcoder. <br/>
+ By default it is enabled. Changing the value will only affect future streaming and may interrupt existing streams so it is advisable to set it immediately after <a class="el" href="interface_t_versity_a_f_air_flinger.html#a300c2dd24e755f61429b3f2c9b76dbc0">initInstance</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_t_versity_a_f_air_flinger_8h.html">TVersityAFAirFlinger.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 31 2012 12:51:10 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 8 2013 20:50:05 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
