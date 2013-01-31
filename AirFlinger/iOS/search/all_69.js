@@ -1,6 +1,7 @@
 var searchData=
 [
   ['iconuri',['iconURI',['../interface_t_versity_a_f_server_object.html#ad60f73d3554d64563dfb5d48c6b14165',1,'TVersityAFServerObject']]],
+  ['init',['init',['../interface_t_versity_a_l_asset_file.html#affb06354387e7fe4157421132ff8b89c',1,'TVersityALAssetFile::init()'],['../interface_t_versity_a_v_asset_file.html#a9e5662acb6fc2f2abd40817eea5fd116',1,'TVersityAVAssetFile::init()']]],
   ['initinstance_3adelegate_3aeventmask_3a',['initInstance:delegate:eventMask:',['../interface_t_versity_a_f_air_flinger.html#a300c2dd24e755f61429b3f2c9b76dbc0',1,'TVersityAFAirFlinger']]],
   ['initwithid_3aname_3aicon_3a',['initWithId:name:icon:',['../interface_t_versity_a_f_server_object.html#a6245214bc1ec0ff5e4b4e4b3a09f0ce2',1,'TVersityAFServerObject']]],
   ['initwithid_3aname_3aicon_3aresources_3a',['initWithId:name:icon:resources:',['../interface_t_versity_a_f_server_item.html#a4b1b08f442773b47aca8f064223ac919',1,'TVersityAFServerItem']]],

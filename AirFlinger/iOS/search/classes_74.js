@@ -16,5 +16,8 @@ var searchData=
   ['tversityafserverresource',['TVersityAFServerResource',['../interface_t_versity_a_f_server_resource.html',1,'']]],
   ['tversityafservervideo',['TVersityAFServerVideo',['../interface_t_versity_a_f_server_video.html',1,'']]],
   ['tversityafuiwebviewextender',['TVersityAFUIWebViewExtender',['../interface_t_versity_a_f_u_i_web_view_extender.html',1,'']]],
-  ['tversityafuiwebviewmediadelegate_2dp',['TVersityAFUIWebViewMediaDelegate-p',['../protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html',1,'']]]
+  ['tversityafuiwebviewmediadelegate_2dp',['TVersityAFUIWebViewMediaDelegate-p',['../protocol_t_versity_a_f_u_i_web_view_media_delegate-p.html',1,'']]],
+  ['tversityalassetfile',['TVersityALAssetFile',['../interface_t_versity_a_l_asset_file.html',1,'']]],
+  ['tversityavassetfile',['TVersityAVAssetFile',['../interface_t_versity_a_v_asset_file.html',1,'']]],
+  ['tversityiosfile_2dp',['TVersityiOSFile-p',['../protocol_t_versityi_o_s_file-p.html',1,'']]]
 ];

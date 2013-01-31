@@ -183,7 +183,7 @@ Properties</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>The block to invoke with the children information. The block is called asynchronously in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">object</td><td>The child object of this server of which we want to get its children. If nil is passed, returns the children of the root of the server. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">startIndex</td><td>0 based index from where to start the children fetch </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fetchCount</td><td>Maximum number of children to fetch. Use 0 to fetch all children </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fetchCount</td><td>Maximum number of children to fetch. Use 0 to fetch all children Notice there is a limit on the number of fetched objects which varies depending on the amount of metadata returned. Generally a value of up 100 should return without an error. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error occured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
@@ -194,6 +194,7 @@ Properties</h2></td></tr>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
+<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad50b3db022f21507802b0f768204f669">TVersityAFOutOfBoundsError</a> The response is too long. Try again with a lower fetchCount. This error will be returned only in the block.</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error occured. </dd></dl>
@@ -244,7 +245,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>The block to invoke with the children information. The block is called asynchronously, in the main thread of the application. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">startIndex</td><td>0 based index from where to start the children fetch </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fetchCount</td><td>Maximum number of children to fetch. Use 0 to fetch all children </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fetchCount</td><td>Maximum number of children to fetch. Use 0 to fetch all children Notice there is a limit on the number of fetched objects which varies depending on the amount of metadata returned. Generally a value of up 100 should return without an error. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">outError</td><td>On return, if an error occured, outError will contain an error object with error information.</td></tr>
   </table>
   </dd>
@@ -255,6 +256,7 @@ Properties</h2></td></tr>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aabc260fb6366144e15938d3080283d8c1">TVersityAFInvalidDeviceError</a> No device is known with the specified id</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05">TVersityAFDeviceOfflineError</a> The device is offline and cannot be accessed</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aacee2e5129945dfed401d2c0c11b6fbf2">TVersityAFInvalidCommandError</a> The device does not support this command or its current state does not allow it</li>
+<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad50b3db022f21507802b0f768204f669">TVersityAFOutOfBoundsError</a> The response is too long. Try again with a lower fetchCount. This error will be returned only in the block.</li>
 <li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c">TVersityAFUnknownError</a></li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error occured. </dd></dl>
@@ -358,7 +360,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2013 13:45:10 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -26,6 +26,7 @@ var searchData=
   ['tversityafmediatypenone',['TVersityAFMediaTypeNone',['../group___o_s_assets.html#gga609f77040972bb24435d6cca199e59d8a35acbc621749289c6cce692ed4a33ecb',1,'TVersityAFMediaItem.h']]],
   ['tversityafmediatypephoto',['TVersityAFMediaTypePhoto',['../group___o_s_assets.html#gga609f77040972bb24435d6cca199e59d8ae398962774e1dc2be4effdca977d12df',1,'TVersityAFMediaItem.h']]],
   ['tversityafmediatypevideo',['TVersityAFMediaTypeVideo',['../group___o_s_assets.html#gga609f77040972bb24435d6cca199e59d8aceb367df79b8ecf962143bde673be2eb',1,'TVersityAFMediaItem.h']]],
+  ['tversityafoutofboundserror',['TVersityAFOutOfBoundsError',['../_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aad50b3db022f21507802b0f768204f669',1,'TVersityAFErrors.h']]],
   ['tversityafplayercpbseek',['TVersityAFPlayerCpbSeek',['../group___players.html#gga960343b71a4a87ec713de5c780a90afbaa45a62588fb996586817753bb5b636b5',1,'TVersityAFPlayer.h']]],
   ['tversityafplayercpbvolumeevent',['TVersityAFPlayerCpbVolumeEvent',['../group___players.html#gga960343b71a4a87ec713de5c780a90afbaef834452a39990c336b1106c8ac6f6b8',1,'TVersityAFPlayer.h']]],
   ['tversityafunknownerror',['TVersityAFUnknownError',['../_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa7e6bbad5f7c0b8c2148d40a80a7fa24c',1,'TVersityAFErrors.h']]]

@@ -118,11 +118,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  For example, if you call <a class="el" href="interface_t_versity_a_f_player.html#aaa880d811ce4a51fd576b4a5ae30f3fb">playURI </a> method of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a>, this method can fail in the synchronous part if for example you pass an invalid URI parameter. In that case it will return the error immedialty.<br/>
  If however everything is valid, the synchronous part will return without an error. The command will then be sent to the player device.<br/>
  The player will return an asynchronous response to this command which can contain an error, if for example the URI could not be accessed.</p>
+<p><b>About memory management</b>: The SDK supports only ARC memory management. Using manual memory management with the SDK is not recommended.</p>
 <p>A good way to continue from here is to check the <a href="modules.html">Modules</a> page, and examine the demo application provided with the SDK. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 4 2012 10:05:12 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2013 13:23:11 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
