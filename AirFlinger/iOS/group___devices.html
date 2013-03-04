@@ -76,8 +76,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Devices</div>  </div>
@@ -87,15 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Accessing and controlling media devices on the network.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group___players"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___players.html">Player devices</a></td></tr>
-<tr class="memdesc:group___players"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesssing and controlling player devices (media renderers) <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___server_browsing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___server_browsing.html">Media Server Browsing</a></td></tr>
-<tr class="memdesc:group___server_browsing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Browsing the content of a media server. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_device.html">TVersityAFDevice</a></td></tr>
@@ -107,6 +98,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_versity_a_f_server.html">TVersityAFServer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A media server device. With this class you can browse the content of the media server.  <a href="interface_t_versity_a_f_server.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga202126e542d8232c08e63c19c2cf45f9"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___devices.html#ga202126e542d8232c08e63c19c2cf45f9">TVersityAFCommandBlock</a> )(BOOL isError, NSError *error)</td></tr>
+<tr class="memdesc:ga202126e542d8232c08e63c19c2cf45f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the block to be called with the result of an an asynchronous player command.  <a href="#ga202126e542d8232c08e63c19c2cf45f9"></a><br/></td></tr>
+<tr class="separator:ga202126e542d8232c08e63c19c2cf45f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f78fcedd72e089d13f1051312e8b8c8"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___devices.html#ga6f78fcedd72e089d13f1051312e8b8c8">TVersityAFPositionInfoBlock</a> )(BOOL isError, NSString *currentTime, NSString *trackDuration, NSInteger currentTimeSecs, NSInteger trackDurationSecs, NSError *error)</td></tr>
+<tr class="memdesc:ga6f78fcedd72e089d13f1051312e8b8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the block to be called with position information.  <a href="#ga6f78fcedd72e089d13f1051312e8b8c8"></a><br/></td></tr>
+<tr class="separator:ga6f78fcedd72e089d13f1051312e8b8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga365952714d7bd70e46ca9d15e80f9270"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___devices.html#ga365952714d7bd70e46ca9d15e80f9270">TVersityAFVolumeBlock</a> )(NSInteger volumeLevel, BOOL isError, NSError *error)</td></tr>
+<tr class="memdesc:ga365952714d7bd70e46ca9d15e80f9270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the block to be called with volume information.  <a href="#ga365952714d7bd70e46ca9d15e80f9270"></a><br/></td></tr>
+<tr class="separator:ga365952714d7bd70e46ca9d15e80f9270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -136,9 +139,84 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga5a004483ddae2acd127edd1470dd8117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines mask values for registering to event notifications.  <a href="group___devices.html#ga5a004483ddae2acd127edd1470dd8117">More...</a><br/></td></tr>
 <tr class="separator:ga5a004483ddae2acd127edd1470dd8117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga960343b71a4a87ec713de5c780a90afb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___devices.html#ga960343b71a4a87ec713de5c780a90afb">TVersityAFPlayerCapabilites</a> { <a class="el" href="group___devices.html#gga960343b71a4a87ec713de5c780a90afbaa45a62588fb996586817753bb5b636b5">TVersityAFPlayerCpbSeek</a> = 1 &lt;&lt; 0, 
+<a class="el" href="group___devices.html#gga960343b71a4a87ec713de5c780a90afbaef834452a39990c336b1106c8ac6f6b8">TVersityAFPlayerCpbVolumeEvent</a> = 1 &lt;&lt; 1
+ }</td></tr>
+<tr class="memdesc:ga960343b71a4a87ec713de5c780a90afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the range of codes for player capabilites.  <a href="group___devices.html#ga960343b71a4a87ec713de5c780a90afb">More...</a><br/></td></tr>
+<tr class="separator:ga960343b71a4a87ec713de5c780a90afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Accessing and controlling media devices on the network. </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga202126e542d8232c08e63c19c2cf45f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(^ TVersityAFCommandBlock)(BOOL isError, NSError *error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the block to be called with the result of an an asynchronous player command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isError</td><td>YES if an error occured. NO if the command was invoked successfully. </td></tr>
+    <tr><td class="paramname">error</td><td>If an error occured, error will contain an error object with error information.<br/>
+ The specific error codes this parameter can return are available in the documentation of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a> methods. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6f78fcedd72e089d13f1051312e8b8c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(^ TVersityAFPositionInfoBlock)(BOOL isError, NSString *currentTime, NSString *trackDuration, NSInteger currentTimeSecs, NSInteger trackDurationSecs, NSError *error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the block to be called with position information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isError</td><td>YES if an error occured. NO if the command was invoked successfully. </td></tr>
+    <tr><td class="paramname">currentTime</td><td>The current time position in the media. </td></tr>
+    <tr><td class="paramname">trackDuration</td><td>The total duration of the media. </td></tr>
+    <tr><td class="paramname">error</td><td>If an error occured, error will contain an error object with error information.<br/>
+ The specific error codes this parameter can return are available in the documentation of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a> methods. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga365952714d7bd70e46ca9d15e80f9270"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(^ TVersityAFVolumeBlock)(NSInteger volumeLevel, BOOL isError, NSError *error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the block to be called with volume information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isError</td><td>YES if an error occured. NO if the command was invoked successfully. </td></tr>
+    <tr><td class="paramname">volumeLevel</td><td>The current volume. </td></tr>
+    <tr><td class="paramname">error</td><td>If an error occured, error will contain an error object with error information.<br/>
+ The specific error codes this parameter can return are available in the documentation of <a class="el" href="interface_t_versity_a_f_player.html" title="The Player device provides the functionality for playing media, getting information about the media a...">TVersityAFPlayer</a> methods. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga9605f94167ee44f963a79c4300e0ae4e"></a>
 <div class="memitem">
@@ -217,10 +295,34 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga960343b71a4a87ec713de5c780a90afb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___devices.html#ga960343b71a4a87ec713de5c780a90afb">TVersityAFPlayerCapabilites</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the range of codes for player capabilites. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="gga960343b71a4a87ec713de5c780a90afbaa45a62588fb996586817753bb5b636b5"></a>TVersityAFPlayerCpbSeek</em>&nbsp;</td><td>
+<p>It is possible to seek the player for a specific location in the media. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="gga960343b71a4a87ec713de5c780a90afbaef834452a39990c336b1106c8ac6f6b8"></a>TVersityAFPlayerCpbVolumeEvent</em>&nbsp;</td><td>
+<p>The player supports volume change events. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 14:43:19 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 4 2013 17:07:58 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

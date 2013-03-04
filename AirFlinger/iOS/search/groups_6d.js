@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['media_20server_20browsing',['Media Server Browsing',['../group___server_browsing.html',1,'']]]
+  ['media_20objects',['Media Objects',['../group___media_items.html',1,'']]]
 ];
