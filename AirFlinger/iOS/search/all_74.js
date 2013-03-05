@@ -16,7 +16,6 @@ var searchData=
   ['tversityafdeviceplayer',['TVersityAFDevicePlayer',['../group___main.html#gga4fba20bf4b3100f68b6760e7e2730a81ae4dae9e9411e5aff457ff0bef952661b',1,'TVersityAFAirFlinger.h']]],
   ['tversityafdeviceserver',['TVersityAFDeviceServer',['../group___main.html#gga4fba20bf4b3100f68b6760e7e2730a81ac85af09be3e62a5809e37f1ec4f188c8',1,'TVersityAFAirFlinger.h']]],
   ['tversityafdevicestatus',['TVersityAFDeviceStatus',['../group___devices.html#ga9605f94167ee44f963a79c4300e0ae4e',1,'TVersityAFDevice.h']]],
-  ['tversityafdvstatloadedmediainfo',['TVersityAFDvStatLoadedMediaInfo',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4eaae36358df88f0add23a92ceb3a07ebda',1,'TVersityAFDevice.h']]],
   ['tversityafdvstatoffline',['TVersityAFDvStatOffline',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4eae29d4ee162219e2a37f8c88c896169af',1,'TVersityAFDevice.h']]],
   ['tversityafdvstatonline',['TVersityAFDvStatOnline',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4ea3954648ad8d365cf4c517296f12b6613',1,'TVersityAFDevice.h']]],
   ['tversityafdvstatpausedplayback',['TVersityAFDvStatPausedPlayback',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4eae28d746190e72c9c23eb5cb29bd7d569',1,'TVersityAFDevice.h']]],
