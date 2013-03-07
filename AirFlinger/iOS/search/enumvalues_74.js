@@ -4,6 +4,7 @@ var searchData=
   ['tversityafdeviceofflineerror',['TVersityAFDeviceOfflineError',['../_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa5bf4aae54050801321b684becd8b0f05',1,'TVersityAFErrors.h']]],
   ['tversityafdeviceplayer',['TVersityAFDevicePlayer',['../group___main.html#gga4fba20bf4b3100f68b6760e7e2730a81ae4dae9e9411e5aff457ff0bef952661b',1,'TVersityAFAirFlinger.h']]],
   ['tversityafdeviceserver',['TVersityAFDeviceServer',['../group___main.html#gga4fba20bf4b3100f68b6760e7e2730a81ac85af09be3e62a5809e37f1ec4f188c8',1,'TVersityAFAirFlinger.h']]],
+  ['tversityafdownloadfailed',['TVersityAFDownloadFailed',['../_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa0f35dfa4adb3c8344edf9648ba83ce78',1,'TVersityAFErrors.h']]],
   ['tversityafdvstatoffline',['TVersityAFDvStatOffline',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4eae29d4ee162219e2a37f8c88c896169af',1,'TVersityAFDevice.h']]],
   ['tversityafdvstatonline',['TVersityAFDvStatOnline',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4ea3954648ad8d365cf4c517296f12b6613',1,'TVersityAFDevice.h']]],
   ['tversityafdvstatpausedplayback',['TVersityAFDvStatPausedPlayback',['../group___devices.html#gga9605f94167ee44f963a79c4300e0ae4eae28d746190e72c9c23eb5cb29bd7d569',1,'TVersityAFDevice.h']]],

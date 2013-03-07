@@ -13,7 +13,6 @@ var searchData=
   ['tversityafplayer_2eh',['TVersityAFPlayer.h',['../_t_versity_a_f_player_8h.html',1,'']]],
   ['tversityafremotemediacontainer_2eh',['TVersityAFRemoteMediaContainer.h',['../_t_versity_a_f_remote_media_container_8h.html',1,'']]],
   ['tversityafremotemediaitem_2eh',['TVersityAFRemoteMediaItem.h',['../_t_versity_a_f_remote_media_item_8h.html',1,'']]],
-  ['tversityafremotemediaobject_2eh',['TVersityAFRemoteMediaObject.h',['../_t_versity_a_f_remote_media_object_8h.html',1,'']]],
   ['tversityafresource_2eh',['TVersityAFResource.h',['../_t_versity_a_f_resource_8h.html',1,'']]],
   ['tversityafserver_2eh',['TVersityAFServer.h',['../_t_versity_a_f_server_8h.html',1,'']]],
   ['tversityafuiwebviewextender_2eh',['TVersityAFUIWebViewExtender.h',['../_t_versity_a_f_u_i_web_view_extender_8h.html',1,'']]],

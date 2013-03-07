@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#properties">Properties</a> &#124;
 <a href="class_t_versity_a_f_air_flinger-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TVersityAFAirFlinger Class Reference<div class="ingroups"><a class="el" href="group___main.html">AirFlinger startup</a></div></div>  </div>
+<div class="title">TVersityAFAirFlinger Class Reference<div class="ingroups"><a class="el" href="group___main.html">AirFlinger Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -115,6 +115,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a5d1e695728edb2463ae97da0d4ed987d"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a5d1e695728edb2463ae97da0d4ed987d">searchDevices</a></td></tr>
 <tr class="memdesc:a5d1e695728edb2463ae97da0d4ed987d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to instruct the SDK to refresh the list of devices identified on the network.  <a href="#a5d1e695728edb2463ae97da0d4ed987d"></a><br/></td></tr>
 <tr class="separator:a5d1e695728edb2463ae97da0d4ed987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515cb8dc040edbf18ed637ab8d55527e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_resource.html">TVersityAFResource</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a515cb8dc040edbf18ed637ab8d55527e">selectResourceForPlay:onPlayer:</a></td></tr>
+<tr class="memdesc:a515cb8dc040edbf18ed637ab8d55527e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to check with the sdk which resource it would select for playing.  <a href="#a515cb8dc040edbf18ed637ab8d55527e"></a><br/></td></tr>
+<tr class="separator:a515cb8dc040edbf18ed637ab8d55527e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683390c8a00f89ad5d1c9813e23c1fe3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_air_flinger.html#a683390c8a00f89ad5d1c9813e23c1fe3">terminate</a></td></tr>
 <tr class="separator:a683390c8a00f89ad5d1c9813e23c1fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -252,6 +255,43 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a515cb8dc040edbf18ed637ab8d55527e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_t_versity_a_f_resource.html">TVersityAFResource</a>*) selectResourceForPlay: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td>
+          <td class="paramname"><em>item</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">onPlayer:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_versity_a_f_player.html">TVersityAFPlayer</a> *)&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use this method to check with the sdk which resource it would select for playing. </p>
+<p>A media item may have more than one resource. This method returns the resource that the sdk will select for playing on a player. Use this method when you need to access this resource information. When a player is provided, the selected resource will be the one most fitting to the player's capabilities. If a player is not provided, the best resource to represent this media item will be selected.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>The media item </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">player</td><td>The player on which the media item is intended to be played. Optional.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The selected resource, or nil. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a683390c8a00f89ad5d1c9813e23c1fe3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +339,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 4 2013 17:07:58 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 7 2013 21:31:29 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

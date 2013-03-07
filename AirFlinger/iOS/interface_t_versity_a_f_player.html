@@ -110,9 +110,6 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:aa15631d1d45ed97196edb65c8d59c258"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#aa15631d1d45ed97196edb65c8d59c258">getPositionInfo:error:</a></td></tr>
 <tr class="memdesc:aa15631d1d45ed97196edb65c8d59c258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position information about the media currently loaded in the player.  <a href="#aa15631d1d45ed97196edb65c8d59c258"></a><br/></td></tr>
 <tr class="separator:aa15631d1d45ed97196edb65c8d59c258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e5bdf6662076a8ecc433d495628ca9"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_versity_a_f_resource.html">TVersityAFResource</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a60e5bdf6662076a8ecc433d495628ca9">getResourceForPlay:</a></td></tr>
-<tr class="memdesc:a60e5bdf6662076a8ecc433d495628ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to check with the player which resource it would select for playing.  <a href="#a60e5bdf6662076a8ecc433d495628ca9"></a><br/></td></tr>
-<tr class="separator:a60e5bdf6662076a8ecc433d495628ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025f026836a3bb73834acc0448a6de72"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_player.html#a025f026836a3bb73834acc0448a6de72">getVolume:error:</a></td></tr>
 <tr class="memdesc:a025f026836a3bb73834acc0448a6de72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the player for its current volume.  <a href="#a025f026836a3bb73834acc0448a6de72"></a><br/></td></tr>
 <tr class="separator:a025f026836a3bb73834acc0448a6de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,32 +225,6 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>YES if the method succeeds. NO if an error occured. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a60e5bdf6662076a8ecc433d495628ca9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_versity_a_f_resource.html">TVersityAFResource</a>*) getResourceForPlay: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_t_versity_a_f_media_item.html">TVersityAFMediaItem</a> *)&#160;</td>
-          <td class="paramname"><em>item</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Use this method to check with the player which resource it would select for playing. </p>
-<p>A media item may have more than one resource. This method will return the resource that the player will select when instructed to play this media item. Use this method when you need information on the resource that is going to be played on this player.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">item</td><td>The media item</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The selected resource, or nil. </dd></dl>
 
 </div>
 </div>
@@ -1192,7 +1163,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 4 2013 17:07:59 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 7 2013 21:31:30 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

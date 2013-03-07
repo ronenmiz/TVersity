@@ -78,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Media Objects</div>  </div>
@@ -91,9 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Modules</h2></td></tr>
 <tr class="memitem:group___o_s_assets"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___o_s_assets.html">Local Media Objects</a></td></tr>
 <tr class="memdesc:group___o_s_assets"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classes representing iOS Device Assets. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___remote_objects"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___remote_objects.html">Remote Media Objects</a></td></tr>
-<tr class="memdesc:group___remote_objects"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classes representing objects on a remote media server. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -120,6 +118,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for media items returned by a media server browse request.  <a href="interface_t_versity_a_f_remote_media_item.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaee9775f21bf14c8527c4390293258244"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___media_items.html#gaee9775f21bf14c8527c4390293258244">TVersityAFImageDownloadCompletedBlock</a> )(UIImage *image, NSError *error)</td></tr>
+<tr class="memdesc:gaee9775f21bf14c8527c4390293258244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the block to be called with a result of an asynchrouns image fetch.  <a href="#gaee9775f21bf14c8527c4390293258244"></a><br/></td></tr>
+<tr class="separator:gaee9775f21bf14c8527c4390293258244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga609f77040972bb24435d6cca199e59d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___media_items.html#ga609f77040972bb24435d6cca199e59d8">TVersityAFMediaType</a> { <br/>
@@ -137,6 +141,31 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Classes representing media objects on a local iOS Device or on a remote media server. </p>
 <p>The classes in this module represnt media objects on a local iOS device or on a remote media server and provide a uniform interface for accesing them. Media objects are media items (e.g an image or an audio file) or media containers (e.g. a container object on a remote server). </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="gaee9775f21bf14c8527c4390293258244"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(^ TVersityAFImageDownloadCompletedBlock)(UIImage *image, NSError *error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the block to be called with a result of an asynchrouns image fetch. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>The requested image. Can be nil. </td></tr>
+    <tr><td class="paramname">error</td><td>If an error occured, the error object. Otherwise nil. This error object can contain one of the following error codes:<ul>
+<li><a class="el" href="_t_versity_a_f_errors_8h.html#a2ae4bb5781a0436beed802df1bf2a25aa0f35dfa4adb3c8344edf9648ba83ce78">TVersityAFDownloadFailed</a> The image download failed </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga609f77040972bb24435d6cca199e59d8"></a>
 <div class="memitem">
@@ -169,7 +198,7 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 4 2013 17:07:58 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 7 2013 21:31:29 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

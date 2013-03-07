@@ -12,7 +12,6 @@ var searchData=
   ['tversityafplayer',['TVersityAFPlayer',['../interface_t_versity_a_f_player.html',1,'']]],
   ['tversityafremotemediacontainer',['TVersityAFRemoteMediaContainer',['../interface_t_versity_a_f_remote_media_container.html',1,'']]],
   ['tversityafremotemediaitem',['TVersityAFRemoteMediaItem',['../interface_t_versity_a_f_remote_media_item.html',1,'']]],
-  ['tversityafremotemediaobject_2dp',['TVersityAFRemoteMediaObject-p',['../protocol_t_versity_a_f_remote_media_object-p.html',1,'']]],
   ['tversityafresource',['TVersityAFResource',['../interface_t_versity_a_f_resource.html',1,'']]],
   ['tversityafserver',['TVersityAFServer',['../interface_t_versity_a_f_server.html',1,'']]],
   ['tversityafuiwebviewextender',['TVersityAFUIWebViewExtender',['../interface_t_versity_a_f_u_i_web_view_extender.html',1,'']]],
