@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['artwithcompletedblock_3a',['artWithCompletedBlock:',['../interface_t_versity_a_f_media_object.html#a4953656ee0cc98fc21b55d7c08c14ca9',1,'TVersityAFMediaObject']]]
+  ['artwithblock_3a',['artWithBlock:',['../interface_t_versity_a_f_media_object.html#a7ed843e591309bfad041aa89858e79ab',1,'TVersityAFMediaObject']]]
 ];

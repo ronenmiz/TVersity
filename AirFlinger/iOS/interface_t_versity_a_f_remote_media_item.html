@@ -108,12 +108,12 @@ Inheritance diagram for TVersityAFRemoteMediaItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:a4953656ee0cc98fc21b55d7c08c14ca9"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_media_object.html#a4953656ee0cc98fc21b55d7c08c14ca9">artWithCompletedBlock:</a></td></tr>
-<tr class="memdesc:a4953656ee0cc98fc21b55d7c08c14ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the art of a remote object asynchronously.  <a href="#a4953656ee0cc98fc21b55d7c08c14ca9"></a><br/></td></tr>
-<tr class="separator:a4953656ee0cc98fc21b55d7c08c14ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eab3016b1e9d6a2b21821be981f02f0"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_media_object.html#a2eab3016b1e9d6a2b21821be981f02f0">iconWithCompletedBlock:</a></td></tr>
-<tr class="memdesc:a2eab3016b1e9d6a2b21821be981f02f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the icon of the object asynchronously.  <a href="#a2eab3016b1e9d6a2b21821be981f02f0"></a><br/></td></tr>
-<tr class="separator:a2eab3016b1e9d6a2b21821be981f02f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed843e591309bfad041aa89858e79ab"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_media_object.html#a7ed843e591309bfad041aa89858e79ab">artWithBlock:</a></td></tr>
+<tr class="memdesc:a7ed843e591309bfad041aa89858e79ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the art of the object asynchronously.  <a href="#a7ed843e591309bfad041aa89858e79ab"></a><br/></td></tr>
+<tr class="separator:a7ed843e591309bfad041aa89858e79ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f942afbc79871f2a8d8cf035bdabb69"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_media_object.html#a6f942afbc79871f2a8d8cf035bdabb69">iconWithBlock:</a></td></tr>
+<tr class="memdesc:a6f942afbc79871f2a8d8cf035bdabb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the icon of the object asynchronously.  <a href="#a6f942afbc79871f2a8d8cf035bdabb69"></a><br/></td></tr>
+<tr class="separator:a6f942afbc79871f2a8d8cf035bdabb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a607b37e03003f6725fa0ec545dafcbc3"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_versity_a_f_media_object.html#a607b37e03003f6725fa0ec545dafcbc3">initWithName:type:objectId:resources:icon:art:</a></td></tr>
 <tr class="memdesc:a607b37e03003f6725fa0ec545dafcbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a media object.  <a href="#a607b37e03003f6725fa0ec545dafcbc3"></a><br/></td></tr>
 <tr class="separator:a607b37e03003f6725fa0ec545dafcbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,12 +152,12 @@ Properties</h2></td></tr>
 <p>A media item can have more that one resource. The resources this item contains are available through the <a class="el" href="interface_t_versity_a_f_media_object.html#a188cb4c53f0f110f555055ba4ef7d0f0">resources</a> property.</p>
 <p>Generally you will not create such objects yourself, but get them in the block returned by calling <a class="el" href="interface_t_versity_a_f_server.html#a115e446e686fb5d665dcef2475f7edd5" title="Get the children of one of the child objects of this server.">browseChildrenWithBlock:ofObject:startIndex:fetchCount:error: (TVersityAFServer)</a> </p>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a4953656ee0cc98fc21b55d7c08c14ca9"></a>
+<a class="anchor" id="a7ed843e591309bfad041aa89858e79ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (BOOL) artWithCompletedBlock: </td>
+          <td class="memname">- (BOOL) artWithBlock: </td>
           <td></td>
           <td class="paramtype">(<a class="el" href="group___media_items.html#gaee9775f21bf14c8527c4390293258244">TVersityAFImageDownloadCompletedBlock</a>)&#160;</td>
           <td class="paramname"><em>block</em></td>
@@ -166,7 +166,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fetch the art of a remote object asynchronously. </p>
+<p>Fetch the art of the object asynchronously. </p>
 <p>If the <a class="el" href="interface_t_versity_a_f_media_object.html#aa6f5c1288dc29e0a5c5eb2efd17de5b8">art</a> property returns nil, use this method to try getting the art asynchronously. For a remote media item for example, this method will download the art from the server. When the art is downloaded, the block is called in the main thread of the application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -178,12 +178,12 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2eab3016b1e9d6a2b21821be981f02f0"></a>
+<a class="anchor" id="a6f942afbc79871f2a8d8cf035bdabb69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (BOOL) iconWithCompletedBlock: </td>
+          <td class="memname">- (BOOL) iconWithBlock: </td>
           <td></td>
           <td class="paramtype">(<a class="el" href="group___media_items.html#gaee9775f21bf14c8527c4390293258244">TVersityAFImageDownloadCompletedBlock</a>)&#160;</td>
           <td class="paramname"><em>block</em></td>
@@ -500,7 +500,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 7 2013 21:31:30 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 10 2013 11:42:11 for TVersity AirFlinger iOS SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
