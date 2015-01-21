@@ -1,9 +1,4 @@
-# TVersity Code Samples Repository
+# TVersity Media Server
 
-Samples will be uploaded in the near future.
+This github repo moved to [tversity](/tversity/TVersity-Media-Server).
 
-Meanwhile, please visit http://tversity.com
-
-Wiki is available at - https://github.com/ronenmiz/TVersity/wiki
-
-Thanks!
